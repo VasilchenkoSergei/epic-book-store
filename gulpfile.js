@@ -1,5 +1,6 @@
 'use strict';
 
+const gulp = require('gulp');
 const { series, parallel, src, dest, watch } = require('gulp');
 const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
@@ -8,6 +9,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync').create();
 const del = require('del');
+const pug = require('gulp-pug');
 
 function styles() {
   return src('./scss/style.scss')
@@ -41,5 +43,16 @@ function serve() {
   watch('./*.html').on('change', browserSync.reload);
   watch('./js/*.js').on('change', browserSync.reload);
 }
+
+gulp.task('pug', function() {
+  return gulp.src('src/pug/*.pug')
+      .pipe(plumber())
+      .pipe(pug())
+      .pipe(htmlbeautify({
+        indentSize: 2,
+      }))
+      .pipe(gulp.dest('src/'))
+      .pipe(browserSync.stream());
+});
 
 exports.default = series(clean, styles, serve);

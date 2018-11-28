@@ -1,0 +1,33 @@
+mixin tab-link(name)
+	li.catalog__tabs-item
+		a(href="#").catalog__tabs-link #{name}
+
+mixin page-link(num)
+	li.pagination__item
+		a(href="").pagination__link #{num}
+
+section.catalog
+	.catalog__inner
+		h1.catalog__title Каталог
+		ul.catalog__tabs
+			+tab-link('Все')
+			+tab-link('Маркетинг')
+			+tab-link('Научпоп')
+			+tab-link('Бизнес')
+			+tab-link('Творчество')
+			+tab-link('Мода')
+		.catalog__block
+			include blocks/product-card-mini.pug
+
+	.catalog__pagination.pagination
+		ul.pagination__list
+			+page-link('1')
+			+page-link('2')
+			+page-link('3')
+			+page-link('4')
+			+page-link('5')
+			+page-link('6')
+			+page-link('7')
+			+page-link('8')
+			+page-link('9')
+			+page-link('10')
