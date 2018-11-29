@@ -1,0 +1,19 @@
+form.form
+	label
+		input(type="text"
+				name="user-mail"
+				placeholder="Ваша почта"
+				required
+			).form__mail
+	label
+		input(type="text"
+				name="user-message"
+				placeholder="Сообщение"
+				required
+			).form__message
+	button(type="submit").form__btn Отправить
+	label
+		input(type="checkbox"
+				required
+			).form__checkbox
+		span Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>

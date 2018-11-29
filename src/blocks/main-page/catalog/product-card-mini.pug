@@ -1,6 +1,6 @@
 mixin product-card-mini(name, alt, title, price)
 	article.product-card-mini
-		a(href="").product-card-mini__picture-wrap
+		a(href="#").product-card-mini__picture-wrap
 			picture.product-card-mini__picture
 				img(
 					src=`img/${name}.jpg`
@@ -8,9 +8,9 @@ mixin product-card-mini(name, alt, title, price)
 					width="210"
 					height="300").product-card-mini__img
 		a(href="").product-card-mini__title-wrap
-			h2.product-card-mini__title #{title}
+			h3.product-card-mini__title #{title}
 		block
-		span.product-card-mini__price #{price}
+		span.product-card-mini__price #{price} &#8381;
 
 +product-card-mini('book-lateralnaya-logika', 'book-lateralnaya-logika', 'Латеральная логика', '500')
 	p.product-card-mini__text Головоломный путь к нестандартному мышлению
