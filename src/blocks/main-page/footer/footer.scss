@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: #fff;
+  height: 80px;
+  bottom: 0;
+  padding-top: 22px;
+  position: relative;
+
+  &__logo {
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  &__timetable {
+    display: block;
+    color: #828282;
+    font-size: 0.9rem;
+  }
+
+  &__contacts {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    top: 27px;
+    right: 30px;
+  }
+}

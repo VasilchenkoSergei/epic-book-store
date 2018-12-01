@@ -1,0 +1,16 @@
+mixin page-link(num)
+	li.pagination__item
+		a(href="").pagination__link #{num}
+
+.catalog__pagination.pagination
+		ul.pagination__list
+			+page-link('1')
+			+page-link('2')
+			+page-link('3')
+			+page-link('4')
+			+page-link('5')
+			+page-link('6')
+			+page-link('7')
+			+page-link('8')
+			+page-link('9')
+			+page-link('10')

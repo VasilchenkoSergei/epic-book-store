@@ -1,4 +1,9 @@
 @import 'variables';
+@import 'fonts';
 
-@import 'blocks/page';
-@import 'blocks/page-header';
+@import '../blocks/main-page/header/header.scss';
+@import '../blocks/main-page/promo/promo.scss';
+@import '../blocks/main-page/catalog/catalog.scss';
+@import '../blocks/main-page/offer/offer.scss';
+@import '../blocks/main-page/novice/novice.scss';
+@import '../blocks/main-page/footer/footer.scss';

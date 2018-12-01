@@ -1,0 +1,27 @@
+.product-card-mini {
+  &__picture-wrap {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__title-wrap {
+    display: block;
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: #000;
+    line-height: 30px;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 21px;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+}

@@ -1,10 +1,13 @@
 header.page-header
-	.page-header__inner
-		a(href="index.html").logo
-			img(src="" alt="book store")
+	.page-header__inner.inner
+		a(href="index.html").logo.page-header__logo
+			img(src="img/icons/logo_icon.png" alt="book store")
 		span.page-header__timetable с 9:00 до 19:00
+		button.page-header__toggle
+				.burgerline.burgerline-1.no-animation
+				.burgerline.burgerline-2.no-animation
+				.burgerline.burgerline-3.no-animation
 		nav.main-nav
-			button.main-nav__toggle ЖМИ
 			ul.main-nav__list
 				li.main-nav__item
 					a(href="#").main-nav__link Книги
@@ -13,6 +16,6 @@ header.page-header
 				li.main-nav__item
 					a(href="contacts.html").main-nav__link Контакты
 		a(href="#").page-header__cart-wrap
-			object(type="image/svg+xml" data="cart.svg" width="40" height="40").page-header__cart
+			object(type="image/svg+xml" data="cart.svg" width="20" height="20").page-header__cart
 		a(href="#").page-header__phone-wrap
-			object(type="image/svg+xml" data="phone.svg" width="40" height="40").page-header__phone
+			object(type="image/svg+xml" data="phone.svg" width="20" height="20").page-header__phone

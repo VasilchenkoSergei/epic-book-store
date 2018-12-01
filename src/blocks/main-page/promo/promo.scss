@@ -1,0 +1,53 @@
+.promo {
+  padding-top: 37px;
+
+  &__inner {
+    margin: 0 auto;
+    width: calc(100% - 22px);
+  }
+}
+
+.slider-textblock {
+  &__descr {
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+
+  &__border {
+    width: 339px;
+    border: 8px solid $border-color;
+    padding: 44px 33px 20px 11px;
+    margin-bottom: 30px;
+  }
+
+  &__showmore {
+    font-weight: 500;
+    color: $link-color;
+  }
+}
+
+.slider__item-picture {
+  display: none;
+}
+
+.slider__item-btn {
+  width: 40px;
+  height: 40px;
+  background-color: $btn-bg-color;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 40px;
+
+  &--left {
+    float: left;
+    margin-left: 100px;
+  }
+
+    &--right {
+    float: right;
+    margin-right: 100px;
+  }
+}

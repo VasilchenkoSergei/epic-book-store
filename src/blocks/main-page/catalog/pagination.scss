@@ -1,0 +1,28 @@
+.pagination {
+  margin-bottom: 63px;
+  
+  &__list {
+    display: flex;
+    padding-left: 41px;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+  }
+
+  &__item {
+    margin-right: 20px;
+  }
+  &__item:hover {
+    width: 30px;
+    height: 30px;
+    background-color: $btn-bg-color;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: #000;
+  }
+}
