@@ -1,7 +1,14 @@
 .product-card-mini {
+  margin: 0 auto;
+  width: 210px;
+
+  @media (min-width: $screen-lg) {
+    margin: 0 20px;
+  }
+
   &__picture-wrap {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   &__title-wrap {

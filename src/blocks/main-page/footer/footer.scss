@@ -5,15 +5,32 @@
   padding-top: 22px;
   position: relative;
 
+  &__inner {
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+  }
+
   &__logo {
     display: block;
     margin-bottom: 13px;
+
+    @media (min-width: $screen-md) {
+      display: inline-block;
+    }
   }
 
   &__timetable {
     display: block;
     color: #828282;
     font-size: 0.9rem;
+
+  @media (min-width: $screen-md) {
+    display: inline-block;
+    margin-right: 30%;
+  }
   }
 
   &__contacts {
@@ -23,5 +40,28 @@
     position: absolute;
     top: 27px;
     right: 30px;
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+}
+
+.footer-nav {
+  display: none;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+  }
+
+  &__link {
+    color: #000;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  
+  @media (min-width: $screen-md) {
+    display: block;
   }
 }

@@ -1,5 +1,6 @@
 .offer {
   margin-bottom: 113px;
+
   &__inner {
     width: calc(100% - 22px);
     margin: 0 auto;
@@ -9,12 +10,21 @@
     width: 339px;
     border: 8px solid $border-color;
     padding: 49px 11px 20px 11px;
+    margin: 0 auto;
     margin-bottom: 110px;
+
+    @media (min-width: $screen-md) {
+      width: calc(100% - 80px);
+    }
   }
 
   &__title {
     font-size: 1.9rem;
     margin-bottom: 36px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 21px;
+    }
   }
 
   &__subtitle {
@@ -27,7 +37,12 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -37,6 +52,7 @@
     font-weight: 500;
     line-height: 24px;
     position: relative;
+    margin: 0 auto;
   }
 
   &__item:not(:last-child) {
