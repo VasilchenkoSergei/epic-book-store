@@ -1,0 +1,50 @@
+.invitation {
+  padding-top: 92px;
+  padding-bottom: 49px;
+  text-align: center;
+  background-image: url(../img/invitation_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #d7569c;
+    opacity: 0.8;
+  }
+
+  &__inner {
+    width: calc(100% - 82px);
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 10px;
+      border: 2px solid #fff;
+      left: 0;
+      right: 0;
+      top: -40px;
+      margin: auto;
+    }
+  }
+
+  &__subtitle {
+    color: #fff;
+    line-height: 30px;
+  }
+}

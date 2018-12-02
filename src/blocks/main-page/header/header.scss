@@ -34,11 +34,12 @@
     }
   }
 
-  &__phone {
+  &__phone-wrap {
     display: none;
 
     @media (min-width: $screen-md) {
       display: block;
+      cursor: pointer;
     }
   }
 
@@ -86,5 +87,9 @@
     color: #000;
     font-weight: 700;
     font-size: 0.9rem;
+
+    &:hover {
+      color: #1a1ff7;
+    }
   }
 }

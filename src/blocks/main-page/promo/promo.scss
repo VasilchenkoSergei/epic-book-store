@@ -1,5 +1,9 @@
 .promo {
-  padding-top: 37px;
+  padding-top: 100px;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 76px;
+    }
 
   &__inner {
     margin: 0 auto;
@@ -19,10 +23,20 @@
     line-height: 1.5rem;
     margin-bottom: 25px;
     padding-left: 20px;
+    position: absolute;
+    left: -20px;
+    top: -70px;
 
     @media (min-width: $screen-md) {
       width: 320px;
       padding-left: 0;
+      left: -5px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 320px;
+      padding-left: 0;
+      left: 20px;
     }
   }
 
@@ -32,9 +46,10 @@
     padding: 44px 33px 20px 11px;
     margin: 0 auto;
     margin-bottom: 30px;
+    position: relative;
 
     @media (min-width: $screen-md) {
-
+      width: 560px;
       padding-bottom: 60px;
       padding-left: 32px;
     }
@@ -54,11 +69,25 @@
       width: 440px;
       line-height: 40px;
     }
+
+    @media (min-width: $screen-lg) {
+      font-size: 2.5rem;
+      width: 500px;
+      line-height: 50px;
+    }
   }
 
   &__showmore {
     font-weight: 500;
     color: $link-color;
+
+    &:hover {
+      color: #6c73ff;
+    }
+
+    &:visited {
+      color: #1316b0;
+    }
   }
 }
 
@@ -70,6 +99,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    align-items: center;
   }
 }
 
@@ -78,14 +108,15 @@
 
   @media (min-width: $screen-lg) {
     display: block;
-    margin-top: 25px;
+    // margin-top: 25px;
+    padding-bottom: 50px;
   }
 }
 
 .slider__item-btn {
   width: 40px;
   height: 40px;
-  background-color: $btn-bg-color;
+  background-color: red;
   border-radius: 50%;
   border: none;
   margin-bottom: 40px;

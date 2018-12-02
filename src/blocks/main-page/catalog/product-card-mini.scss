@@ -8,7 +8,17 @@
 
   &__picture-wrap {
     display: block;
+    width: 210px;
+    height: 300px;
     margin-bottom: 33px;
+
+    &:hover {
+      box-shadow: 0 12px 33px 5px #f4d4e4;
+    }
+  }
+
+  &:hover .product-card-mini__price {
+    color: #ef529f;
   }
 
   &__title-wrap {

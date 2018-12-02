@@ -2,9 +2,9 @@
 
   &__inner {
 
-  @media (min-width: $screen-sm) {
-    width: calc(100% - 180px);
-  }
+    @media (min-width: $screen-sm) {
+      width: calc(100% - 180px);
+    }
   }
 
   &__tabs {
@@ -28,13 +28,27 @@
     }
   }
 
+  &__tabs-item {
+    margin-right: 31px;
+
+    &:first-child .catalog__tabs-link {
+      color: #1a1ff7;
+    }
+  }
+
   &__tabs-link {
     font-weight: 500;
     color: #000;
+    position: relative;
+
+  &:hover {
+    color: #1a1ff7;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ef529f;
+  }
   }
 
   &__block {
-    padding-left: 20px;
 
     @media (min-width: $screen-sm) {
       display: flex;

@@ -1,0 +1,22 @@
+.address {
+    margin-bottom: 40px;
+
+  &__title {
+    font-size: 3.13rem;
+  }
+
+  &__list {
+    list-style-type: disc;
+    padding-left: 22px;
+  }
+
+  &__item {
+    font-weight: 500;
+    line-height: 70px;
+  }
+
+  &__map {
+    height: 340px;
+    padding-left: -30px;
+  }
+}

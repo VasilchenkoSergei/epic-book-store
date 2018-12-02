@@ -1,17 +1,18 @@
 .novice {
   position: relative;
+  padding-bottom: 50px;
 
   &:before {
     content: '';
     width: 100%;
-    min-height: 490px;
+    min-height: 560px;
     position: absolute;
     background-color: $bottom-color;
     z-index: -10;
     left: 0;
     right: 0;
     margin: auto;
-    top: 240px;
+    bottom: -60px;
 
     @media (min-width: $screen-md) {
       display: inline-block;
@@ -36,6 +37,14 @@
       float: right;
       display: inline-block;
     }
+
+    &:hover {
+      color: #6c73ff;
+    }
+
+    &:visited {
+      color: #1316b0;
+    }
   }
 
   &__block {
@@ -43,6 +52,16 @@
     width: 100%;
     justify-content: space-between;
     margin-right: 40px;
+
+    & .product-card-mini {
+      width: 260px;
+      margin-right: 30px;
+    }
+
+    & .product-card-mini .product-card-mini__picture-wrap {
+      width: 260px;
+      height: 370px;
+    }
 
     & .product-card-mini .product-card-mini__price {
       display: none;
