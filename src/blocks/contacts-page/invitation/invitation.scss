@@ -41,10 +41,15 @@
       top: -40px;
       margin: auto;
     }
+
+    @media (min-width: $screen-md) {
+        font-size: 2.25rem;
+      }
   }
 
   &__subtitle {
     color: #fff;
     line-height: 30px;
+    position: relative;
   }
 }

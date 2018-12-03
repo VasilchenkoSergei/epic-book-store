@@ -554,17 +554,52 @@ h2 {
 
 .address {
   margin-bottom: 40px; }
+  @media (min-width: 767px) {
+    .address__inner {
+      width: calc(100% - 88px); } }
   .address__title {
-    font-size: 3.13rem; }
+    font-size: 3.13rem;
+    margin-bottom: 46px; }
+    @media (min-width: 767px) {
+      .address__title {
+        margin-bottom: 56px; } }
   .address__list {
-    list-style-type: disc;
     padding-left: 22px; }
+    @media (min-width: 767px) {
+      .address__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-bottom: 46px; } }
   .address__item {
     font-weight: 500;
-    line-height: 70px; }
+    position: relative;
+    margin-bottom: 25px; }
+    .address__item:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #020efb;
+      top: 0;
+      bottom: 0;
+      left: -20px;
+      margin: auto; }
+    @media (min-width: 767px) {
+      .address__item {
+        width: 50%; } }
+    @media (min-width: 1279px) {
+      .address__item {
+        width: 30%; } }
   .address__map {
     height: 340px;
     padding-left: -30px; }
+    @media (min-width: 1279px) {
+      .address__map {
+        width: 1160px; } }
 
 .question {
   margin-bottom: 50px; }
@@ -584,6 +619,15 @@ h2 {
     line-height: 24px;
     margin-bottom: 30px; }
 
+@media (min-width: 767px) {
+  .form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
 .form__input {
   background-color: transparent;
   border: none;
@@ -591,7 +635,10 @@ h2 {
   width: 100%;
   color: #a6a6a6;
   font-weight: 500;
-  margin-bottom: 55px; }
+  margin-bottom: 55px;
+  outline: none; }
+  .form__input:hover {
+    border-bottom: 4px solid #f4d4e4; }
 
 .form__btn {
   width: 300px;
@@ -612,12 +659,16 @@ h2 {
   .form__checkbox:checked + .form__checkbox--custom:before {
     content: "";
     display: block;
+    background-image: url(../img/icons/form_checkbox.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    background: #000; }
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #dcdcdc; }
   .form__checkbox--custom {
     display: inline-block;
     vertical-align: middle;
@@ -631,11 +682,14 @@ h2 {
   vertical-align: middle;
   line-height: 24px;
   font-weight: 500;
-  font-size: 0.9rem; }
+  font-size: 0.85rem; }
   .form__checkbox-text a {
     color: #1a1ff7; }
     .form__checkbox-text a:hover {
       color: #6c73ff; }
+  @media (min-width: 767px) {
+    .form__checkbox-text {
+      width: 375px; } }
 
 .invitation {
   padding-top: 92px;
@@ -673,8 +727,12 @@ h2 {
       right: 0;
       top: -40px;
       margin: auto; }
+    @media (min-width: 767px) {
+      .invitation__title {
+        font-size: 2.25rem; } }
   .invitation__subtitle {
     color: #fff;
-    line-height: 30px; }
+    line-height: 30px;
+    position: relative; }
 
 /*# sourceMappingURL=style.css.map */
