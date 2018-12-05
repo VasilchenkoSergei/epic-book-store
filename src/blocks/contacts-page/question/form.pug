@@ -1,4 +1,4 @@
- form.form
+ form.form(action='#')
 	label
 		input(type="text"
 				name="user-mail"
@@ -14,7 +14,6 @@
 	label
 		input(type="checkbox"
 				required
-			).form__checkbox
+			).form__checkbox Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>
 		span.form__checkbox--custom
-		span.form__checkbox-text Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>
 	button(type="submit").form__btn Отправить

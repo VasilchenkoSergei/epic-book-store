@@ -27,6 +27,7 @@ h2 {
 .inner {
   margin: 0 auto;
   width: calc(100% - 60px);
+  max-width: 1165px;
 
   @media (min-width: $screen-md) {
     width: calc(100% - 80px);

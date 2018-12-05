@@ -1,5 +1,5 @@
 .address {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
     &__inner {
       @media (min-width: $screen-md) {
@@ -55,10 +55,12 @@
 
   &__map {
     height: 340px;
-    padding-left: -30px;
+    width: calc(100% + 60px);
+    margin-left: -30px;
 
-    @media (min-width: $screen-lg) {
-      width: 1160px;
+    @media (min-width: $screen-md) {
+      width: calc(100% + 88px);
+      margin-left: -44px;
     }
   }
 }

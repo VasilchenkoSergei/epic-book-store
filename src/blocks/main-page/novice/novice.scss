@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -60px;
+    bottom: -42px;
 
     @media (min-width: $screen-md) {
       display: inline-block;
@@ -24,18 +24,19 @@
 
     @media (min-width: $screen-md) {
       display: inline-block;
+      vertical-align: middle;
     }
   }
 
   &__link {
     display: block;
-    margin-bottom: 40px;
     font-weight: 500;
     color: $link-color;
 
     @media (min-width: $screen-md) {
       float: right;
       display: inline-block;
+      vertical-align: middle;
     }
 
     &:hover {

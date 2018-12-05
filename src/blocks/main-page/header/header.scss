@@ -3,24 +3,16 @@
   width: 100%;
   background-color: #fff;
   padding-top: 18px;
+  position: relative;
 
   &__inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     position: relative;
     padding-right: 40px;
 
     @media (min-width: $screen-md) {
       padding-right: 0;
-    }
-  }
-
-  &__logo {
-    flex-grow: 2;
-
-    @media (min-width: $screen-md) {
-      flex-grow: 0;
     }
   }
 
@@ -31,6 +23,12 @@
 
     @media (min-width: $screen-md) {
       display: block;
+    }
+  }
+
+  &__cart-wrap {
+    @media (min-width: $screen-lg) {
+      margin-left: 50px;
     }
   }
 
@@ -70,16 +68,81 @@
 }
 
 .main-nav {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
 
   &__list {
-    display: none;
-    width: 280px;
-    margin-left: 70px;
-    margin-right: 20px;
+    width: 196px;
+    height: 160px;
+    opacity: 0.9;
+    background-color: #f4d4e4;
+    position: absolute;
+    right: 0;
+    top: 33px;
+    padding-left: 52px;
+    padding-top: 19px;
+    z-index: 2;
+
+    @media (min-width: $screen-md) {
+      margin-left: 70px;
+      width: 280px;
+      margin-right: 20px;
+      position: static;
+      height: auto;
+      opacity: 1;
+      background-color: transparent;
+      padding-left: 0;
+      padding-top: 0;
+      z-index: 0;
+    }
 
     @media (min-width: $screen-md) {
       display: flex;
       justify-content: space-between;
+    }
+
+    @media (min-width: $screen-xmd) {
+      margin-left: 250px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 450px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 18px;
+
+    &:last-child .main-nav__link {
+        color: #1a1ff7;
+      }
+
+    &:last-child {
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    &:last-child:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      border: 1px solid red;
+      left: -30px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+
+      &:last-child {
+        display: none;
+      }
     }
   }
 

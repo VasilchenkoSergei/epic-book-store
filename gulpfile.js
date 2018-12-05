@@ -55,7 +55,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync').create();
 const del = require('del');
-const pug = require('gulp-pug');
+// const pug = require('gulp-pug');
 const htmlbeautify = require('gulp-html-beautify');
 
 
@@ -79,39 +79,27 @@ function clean() {
 
 function serve() {
   browserSync.init({
-    server: './',
+    server: './src',
     startPath: 'index.html',
     open: false,
     port: 8080,
   });
   watch([
-    'src/blocks/**/*.scss',
+    './src/blocks/**/*.scss',
   ], { delay: 100 }, styles);
-  watch('src/*.html').on('change', browserSync.reload);
+  watch('./src/*.html').on('change', browserSync.reload);
   watch('./js/*.js').on('change', browserSync.reload);
 }
 
-// gulp.task('pug', function() {
-//   return src('src/pug/*.pug')
-//       .pipe(plumber())
-//       .pipe(pug())
-//       .pipe(htmlbeautify({
-//         indentSize: 2,
-//       }))
-//       .pipe(dest('src/'))
-//       .pipe(browserSync.stream());
-// });
+function pug() {
+  return src('src/pug/*.pug')
+      .pipe(plumber())
+      .pipe(pug())
+      .pipe(htmlbeautify({
+        indentSize: 2,
+      }))
+      .pipe(gulp.dest('src/'))
+      .pipe(browserSync.stream());
+}
 
-// function pug() {
-//   return src('src/pug/*.pug')
-//       .pipe(plumber())
-//       .pipe(pug())
-//       .pipe(htmlbeautify({
-//         indentSize: 2,
-//       }))
-//       .pipe(gulp.dest('src/'))
-//       .pipe(browserSync.stream());
-// }
-
-
-exports.default = series(clean, styles, serve);
+exports.default = series(clean, styles, serve, pug);

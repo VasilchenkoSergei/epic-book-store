@@ -26,22 +26,16 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner"><a class="logo" href="index.html"><img src="" alt="book store"></a>
-            <span class="page-header__timetable">с 9:00 до 19:00</span>
-            <button class="page-header__toggle">
-                <div class="burgerline burgerline-1 no-animation"></div>
-                <div class="burgerline burgerline-2 no-animation"></div>
-                <div class="burgerline burgerline-3 no-animation"></div>
-            </button>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">Книги</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="recommendation.html">Рекомендации</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="40" height="40"></object></a><a class="page-header__phone-wrap" href="#"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="40" height="40"></object></a>
-        </div>
-    </header>
+    <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"/></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle"><div class="burgerline burgerline-1 no-animation"></div><div class="burgerline burgerline-2 no-animation"></div><div class="burgerline burgerline-3 no-animation"></div></button>
+        <nav
+            class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="#">книги</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="recommendation.html">рекомендации</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
+            </ul>
+            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="img/icons/icon_cart.svg" width="20" height="20"></object></a><a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="img/icons/icon_phone.svg" width="20" height="20"></object></a></div>
+</header>
     <main>
         <section class="address">
             <div class="address__inner inner">
@@ -65,8 +59,7 @@
                         <label><input class="form__message form__input" type="text" name="user-message" placeholder="Сообщение" required></label>
                         <label>
                             <input class="form__checkbox" type="checkbox">
-                            <span class="form__checkbox--custom"></span>
-                            <span class="form__checkbox-text">Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></span>
+                            <span class="form__checkbox--custom"></span> Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>
                         </label>
                         <button class="form__btn" type="submit">Отправить</button>
                     </form>
@@ -81,16 +74,16 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner"><a class="logo" href="index.html"><img src="" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link">Книги</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link">Рекомендации</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+    <div class="page-footer__inner inner"><a class="logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"/></a><a class="page-footer__contacts" href="#">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link">книги</a></li>
+                <li class="footer-nav__item"><a href="recommendation.html" class="footer-nav__link">рекомендации</a></li>
+                <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
