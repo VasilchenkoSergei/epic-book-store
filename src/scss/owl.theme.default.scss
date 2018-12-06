@@ -23,4 +23,9 @@ $dot-margin: 			5px 7px !default;
 $dot-background:		$color-gray !default;
 $dot-background-active:	$color-base !default;
 
+$screen-sm:           650px;
+$screen-md:           767px;
+$screen-xmd:          1000px;
+$screen-lg:           1279px;
+
 @import 'owl.theme';

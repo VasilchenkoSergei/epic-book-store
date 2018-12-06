@@ -36,7 +36,7 @@
             </button>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">книги</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="recommendation.html">рекомендации</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
@@ -50,7 +50,7 @@
     <main>
         <div class="promo">
             <div class="promo__inner">
-                <div class="slider">
+                <div class="slider owl-carousel owl-theme">
                     <article class="slider__item">
                         <div class="slider__item-block slider-textblock">
                             <div class="slider-textblock__border">
@@ -85,13 +85,11 @@
                         </picture>
                     </article>
                 </div>
-                <button class="slider__item-btn slider__item-btn--left"></button>
-                <button class="slider__item-btn slider__item-btn--right"></button>
             </div>
         </div>
         <section class="catalog">
             <div class="catalog__inner inner">
-                <ul class="catalog__tabs ">
+                <ul class="catalog__tabs owl-carousel owl-theme">
                     <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#">Все</a></li>
                     <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#">Маркетинг</a></li>
                     <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#">Научпоп</a></li>
@@ -100,63 +98,6 @@
                     <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#">Психология</a></li>
                 </ul>
                 <div class="catalog__block">
-                    <!-- <article class="product-card-mini">
-                        <a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika" width="210" height="300"></picture>
-                        </a>
-                        <a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Латеральная логика</h3>
-                        </a>
-                        <p class="product-card-mini__text">Головоломный путь к нестандартному мышлению</p>
-                        <span class="product-card-mini__price">500 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
-                        </a>
-                        <p class="product-card-mini__text">Критическое мышление в эпоху постправды</p><span class="product-card-mini__price">630 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Дао физики</h3>
-                        </a>
-                        <p class="product-card-mini__text">Исследование параллелей между современной физикой и восточной философией</p><span class="product-card-mini__price">560 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Не очевидно</h3>
-                        </a>
-                        <p class="product-card-mini__text">Как выявлять тренды раньше других</p><span class="product-card-mini__price">365 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Суперпотребители</h3>
-                        </a>
-                        <p class="product-card-mini__text">Кто это и почему они так важны для вашего бизнеса</p><span class="product-card-mini__price">500 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Маркетинг в социальных сетях</h3>
-                        </a><span class="product-card-mini__price">630 &#8381;</span></article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Правильный выбор</h3>
-                        </a>
-                        <p class="product-card-mini__text">Практическое руководство по принятию взвешенных решений</p><span class="product-card-mini__price">560 &#8381;</span>
-                    </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv" width="210" height="300"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="">
-                            <h3 class="product-card-mini__title">Главное в истории искусств</h3>
-                        </a>
-                        <p class="product-card-mini__text">Ключевые работы, темы, направления, техники</p><span class="product-card-mini__price">365 &#8381;</span>
-                    </article> -->
                 </div>
                 <div class="catalog__pagination pagination">
                 <ul class="pagination__list">
@@ -192,7 +133,7 @@
             <div class="novice__inner inner">
                 <h2 class="novice__title">Наши новинки</h2>
                 <a class="novice__link" href="">Все новинки</a>
-                <div class="novice__block">
+                <div class="novice__block owl-carousel owl-theme">
                     <article class="product-card-mini">
                         <a class="product-card-mini__picture-wrap" href="#">
                             <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika" width="260" height="370"></picture>

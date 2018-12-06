@@ -34,12 +34,15 @@
     }
 
     @media (min-width: $screen-lg) {
-      // width: 670px;
+      width: 670px;
     }
   }
 
   &__tabs-item {
-    margin-right: 31px;
+
+    @media (min-width: $screen-lg) {
+      margin-right: 31px;
+    }
 
     &:first-child .catalog__tabs-link {
       color: #1a1ff7;

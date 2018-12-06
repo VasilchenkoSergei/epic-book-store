@@ -1,9 +1,4 @@
 .promo {
-  padding-top: 100px;
-
-  @media (min-width: $screen-lg) {
-    padding-top: 76px;
-    }
 
   &__inner {
     margin: 0 auto;
@@ -13,6 +8,14 @@
       width: calc(100% - 280px);
     }
   }
+}
+
+.slider {
+  margin-bottom: 110px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 55px;
+    }
 }
 
 .slider-textblock {
@@ -45,7 +48,6 @@
     border: 8px solid $border-color;
     padding: 44px 33px 20px 11px;
     margin: 0 auto;
-    margin-bottom: 30px;
     position: relative;
 
     @media (min-width: $screen-md) {
@@ -93,6 +95,7 @@
 
 
 .slider__item {
+  padding-top: 60px;
 
   @media (min-width: $screen-lg) {
     width: 1000px;
@@ -101,6 +104,7 @@
     margin-bottom: 100px;
     align-items: center;
     margin: 0 auto;
+    padding-top: 20px;
   }
 }
 
@@ -109,25 +113,27 @@
 
   @media (min-width: $screen-lg) {
     display: block;
+    width: 300px;
+    height: 100%;
     padding-bottom: 50px;
   }
 }
 
-.slider__item-btn {
-  width: 40px;
-  height: 40px;
-  background-color: red;
-  border-radius: 50%;
-  border: none;
-  margin-bottom: 40px;
+// .slider__item-btn {
+//   width: 40px;
+//   height: 40px;
+//   background-color: red;
+//   border-radius: 50%;
+//   border: none;
+//   margin-bottom: 40px;
 
-  &--left {
-    float: left;
-    margin-left: 100px;
-  }
+//   &--left {
+//     float: left;
+//     margin-left: 100px;
+//   }
 
-    &--right {
-    float: right;
-    margin-right: 100px;
-  }
-}
+//     &--right {
+//     float: right;
+//     margin-right: 100px;
+//   }
+// }

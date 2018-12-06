@@ -60,7 +60,7 @@ const htmlbeautify = require('gulp-html-beautify');
 
 
 function styles() {
-  return src('./src/scss/style.scss')
+  return src('./src/scss/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass())
@@ -85,7 +85,7 @@ function serve() {
     port: 8080,
   });
   watch([
-    './src/blocks/**/*.scss',
+    './src/**/*.scss',
   ], { delay: 100 }, styles);
   watch('./src/*.html').on('change', browserSync.reload);
   watch('./js/*.js').on('change', browserSync.reload);

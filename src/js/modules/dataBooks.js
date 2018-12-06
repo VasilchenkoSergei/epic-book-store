@@ -34,7 +34,7 @@ const dataBooks = {
         },
         {
           author: 'Эдди Юн',
-          name: 'Суперпотребители',
+          name: 'Суперпотре&shy;бители',
           price: '500',
           src: 'book-superpotrebiteli',
           alt: 'Суперпотребители',

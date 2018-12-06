@@ -4,6 +4,11 @@
   background-color: #fff;
   padding-top: 18px;
   position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 50px;
+  }
 
   &__inner {
     display: flex;
