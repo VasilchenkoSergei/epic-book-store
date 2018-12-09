@@ -28,13 +28,13 @@
     }
 
     @media (min-width: $screen-md) {
-      width: 670px;
       padding-left: 90px;
       padding-right: 90px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 670px;
+      padding-right: 200px;
+      margin-right: -300px;
     }
   }
 
@@ -62,11 +62,12 @@
   }
 
   &__block {
+    margin: 0 auto;
 
     @media (min-width: $screen-sm) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       padding-left: 0;
     }
   }

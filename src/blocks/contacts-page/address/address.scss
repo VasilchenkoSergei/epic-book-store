@@ -1,11 +1,11 @@
 .address {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 
-    &__inner {
-      @media (min-width: $screen-md) {
-        width: calc(100% - 88px);
-      }
+  &__inner {
+    @media (min-width: $screen-md) {
+      width: calc(100% - 88px);
     }
+  }
 
   &__title {
     font-size: 3.13rem;
@@ -15,14 +15,20 @@
       margin-bottom: 56px;
     }
   }
-
+  
   &__list {
     padding-left: 22px;
 
     @media (min-width: $screen-md) {
+      width: 650px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
       margin-bottom: 46px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 870px;
     }
   }
 
@@ -43,14 +49,6 @@
       left: -20px;
       margin: auto;
     }
-
-    @media (min-width: $screen-md) {
-      width: 50%;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 30%;
-    }
   }
 
   &__map {
@@ -61,6 +59,11 @@
     @media (min-width: $screen-md) {
       width: calc(100% + 88px);
       margin-left: -44px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1160px;
+      margin: 0 auto;
     }
   }
 }

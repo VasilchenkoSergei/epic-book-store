@@ -128,6 +128,10 @@
     &:last-child {
       margin-bottom: 0;
       position: relative;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
     }
 
     &:last-child:before {
@@ -141,14 +145,6 @@
       bottom: 0;
       margin: auto;
     }
-
-    @media (min-width: $screen-md) {
-      margin-bottom: 0;
-
-      &:last-child {
-        display: none;
-      }
-    }
   }
 
   &__link {
@@ -156,12 +152,22 @@
     font-weight: 700;
     font-size: 0.9rem;
 
+    &:link {
+      color: red;
+    }
+
+    &:active {
+      color: green;
+    }
+
     &:hover {
       color: $link-color-hover;
     }
 
-    &:visited {
-      color: $link-color-visited;
-    }
+    // &:visited {
+    //   color: $link-color-visited;
+    // }
+
+    
   }
 }
