@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>document.documentElement.className = ocument.documentElement.className.replace('no-js', 'js');</script>
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
     <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png">
@@ -26,7 +26,9 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner"><a class="logo" href="index.html"><img src="" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
+        <div class="page-header__inner inner">
+            <a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a>
+            <span class="page-header__timetable">с 9:00 до 19:00</span>
             <button class="page-header__toggle">
                 <div class="burgerline burgerline-1 no-animation"></div>
                 <div class="burgerline burgerline-2 no-animation"></div>
@@ -34,25 +36,56 @@
             </button>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">Книги</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="recommendation.html">Рекомендации</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="recommendation.html">рекомендации</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
                 </ul>
-            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="40" height="40"></object></a><a class="page-header__phone-wrap" href="#"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="40" height="40"></object></a>
+            </nav>
+            <a class="page-header__cart-wrap" href="#">
+                <object class="page-header__cart" type="image/svg+xml" data="img/icons/icon_cart.svg" width="20" height="20"></object></a>
+                <a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="img/icons/icon_phone.svg" width="20" height="20"></object></a>
         </div>
     </header>
     <main>
         <section class="recommendation">
-            <div class="recommendation__inner">
+            <div class="recommendation__inner inner">
                 <h2 class="recommendation__title">Наши рекомендации</h2>
                 <div class="recommendation-block">
                     <div class="text-block1">
                         <h3 class="text-block1__title">Новая статья в блоге</h3>
-                        <p class="text-block1__text">Посмотрите, как чтение книг меняет восприятие человека</p><a class="text-block1__link" href="#">Читать статью</a>
-                    </div>
-                    <div class="text-block2">
+                        <p class="text-block1__text">Посмотрите, как чтение книг меняет восприятие человека</p><a class="text-block1__link" href="#">Читать статью</a></div>
+                    <a class="text-block2" href="#">
                         <h3 class="text-block2__title">Книга осени!</h3>
+                        <p class="text-block2__subtitle">Проголосуй за лучшую книгу осени</p>
+                    </a>
+                    <div class="text-block3">
+                        <h3 class="text-block3__title">Книга в подарок!</h3>
+                        <p class="text-block3__subtitle">При вашем новом заказе мы подарим вам книгу</p>
+                        <article class="product-card-mini">
+                            <a class="product-card-mini__picture-wrap" href="#">
+                                <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi" width="260" height="370" /></picture>
+                            </a>
+                            <a class="product-card-mini__title-wrap" href="">
+                                <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
+                                <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+                            </a>
+                        </article>
                     </div>
+                    <a class="text-block4" href="#">
+                        <h3 class="text-block4__title">Наши подборки ваших лучших фотографий у нас</h3>
+                    </a>
+                    <div class="text-block5">
+                        <h3 class="text-block5__title">Нам важно ваше мнение!</h3>
+                        <p class="text-block5__subtitle">Ставьте пальцы вверх, мыхотим знать ваше мнение</p><button class="text-block5__btn">Проголосовать</button></div>
+                    <a class="text-block6" href="#">
+                        <h3 class="text-block6__title">Книги для детей</h3>
+                        <p class="text-block6__subtitle">У нас появился новый раздел, в котором мы подбираем книги для юных читателей</p>
+                    </a>
+                    <a class="text-block7" href="#">
+                        <h3 class="text-block7__title">У вас есть старые книги?</h3>
+                        <p class="text-block7__subtitle">Приносите их нам и обменяйте на новые</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -64,12 +97,15 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner"><a class="logo" href="index.html"><img src="" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link">Книги</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link">Рекомендации</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link">Контакты</a></li>
+        <div class="page-footer__inner inner">
+            <a class="logo page-footer__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a>
+            <a href="#" class="page-footer__contacts">контакты</a>
+            <span class="page-footer__timetable">с 9:00 до 19:00</span>
+            <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">книги</a></li>
+                    <li class="footer-nav__item"><a href="recommendation.html" class="footer-nav__link">рекомендации</a></li>
+                    <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">контакты</a></li>
                 </ul>
             </nav>
         </div>

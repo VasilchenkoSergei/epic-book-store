@@ -88,7 +88,7 @@ function serve() {
     './src/**/*.scss',
   ], { delay: 100 }, styles);
   watch('./src/*.html').on('change', browserSync.reload);
-  watch('./js/*.js').on('change', browserSync.reload);
+  watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
 function pug() {

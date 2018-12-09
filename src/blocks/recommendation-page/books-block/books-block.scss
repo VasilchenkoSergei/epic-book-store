@@ -1,0 +1,50 @@
+.recommendation-block {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "block1 block2 block2 block3"
+						"block4 block2 block2 block3"
+						"block4 block5 block6 block3"
+						"block7 block7 block7 block3";
+}
+
+.text-block1 {
+	grid-area: block1;
+	width: 300px;
+	height: 170px;
+	background-color: #fff;
+	padding: 20px;
+	line-height: 30px;
+	box-shadow: 0 3px 9px 1px rgba(64, 66, 172, 0.35);
+	border-radius: 4px;
+
+	&__link {
+		color: #0f0fc9;
+	}
+}
+
+.text-block2 {
+	text-align: center;
+	grid-area: block2;
+
+}
+
+.text-block3 {
+	grid-area: block3;
+}
+
+.text-block4 {
+	grid-area: block4;
+}
+
+.text-block5 {
+	grid-area: block5;
+}
+
+.text-block6 {
+	grid-area: block6;
+}
+
+.text-block7 {
+	grid-area: block7;
+}
