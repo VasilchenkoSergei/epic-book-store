@@ -4,11 +4,11 @@ const bookCardTemplate = {
   tagClass: '.product-card-mini',
   setContent: function(data) {
     return `<article class="product-card-mini">
-              <a class="product-card-mini__picture-wrap" href="#">
+              <a class="product-card-mini__picture-wrap" href="inner.html">
                   <picture class="product-card-mini__picture">
                   <img class="product-card-mini__img" src="img/books/${data.uri}.png" alt="${data.uri}" width="210" height="300"></picture>
               </a>
-              <a class="product-card-mini__title-wrap" href="">
+              <a class="product-card-mini__title-wrap" href="inner.html">
                   <h3 class="product-card-mini__title">${data.name}</h3>
               </a>
               <p class="product-card-mini__descr">${data.desc}</p>

@@ -1,63 +1,58 @@
 import insertElements from './modules/insertElements.js';
 import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
+import sendRequest from './modules/sendRequest.js';
 
-
+// Объект данных для ajax запроса
 const data = {
   page: 1,
   perPage: 8,
   type: ''
 };
 
+sendRequest(createDataAjax());
+// const dataAjax = createDataAjax();
+
+//Вешаем слушатель на табы
 const tabsWrap = document.querySelector('.j-catalog__tabs');
 const tabsArray = Array.from(tabsWrap.children);
 
 tabsArray.forEach(function(tab) {
   const link = tab.firstElementChild;
+
   link.addEventListener('click', function(event) {
     event.preventDefault();
     data.type = event.target.dataset.type;
 
-      if (window.matchMedia("(min-width: 767px)").matches) {
-        data.perPage = 8;
-      }
-      else {
-        data.perPage = 3;
-      }
-
-    const dataAjax = `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
+    const dataAjax = createDataAjax();
     sendRequest(dataAjax);
-  })
+  });
 
   const type = link.dataset.type;
 });
 
-function sendRequest(data) {
-  let xhr = new XMLHttpRequest;
-  xhr.open('GET', data);
-  xhr.send();
-
-  xhr.onreadystatechange = function() {
-    if(xhr.readyState === 4 && xhr.status === 200) {
-      const request = JSON.parse(xhr.responseText);
-      const wrap = document.querySelector(bookCardTemplate.wrap);
-
-        if(wrap.children) {
-          wrap.innerHTML = '';
-        }
-
-        if(document.querySelector(bookCardTemplate.wrap)) {
-          insertElements(request.items, bookCardTemplate);
-        }
-    }
-    else {
-      console.log(`Жду загрузки: ${xhr.readyState}`);
-    }
+// Функция подготовки url для GET запроса
+function createDataAjax() {
+  if (window.matchMedia("(min-width: 767px)").matches) {
+      data.perPage = 8;
   }
+  else {
+    data.perPage = 3;
+  }
+
+  return `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
 }
 
 
 
+// const addToCart = document.querySelector('.description__block4-btn');
+
+//   addToCart.addEventListener('click', function(event) {
+//     event.preventDefault();
+    
+//     const cartNumber = document.querySelector('.description__block4-box');
+//     cartNumber.innerHTML = cartNumber.innerHTML + '1';
+//   });
 
 
 
@@ -80,7 +75,7 @@ $('.slider').owlCarousel ({
   loop: true,
   center: true,
   nav: true,
-  margin: 20,
+  // margin: 20,
   responsive : {
       0 : {
           items : 1,
@@ -125,6 +120,7 @@ $(window).width(function() {
     return false;
   }
 });
+
 
 
 });

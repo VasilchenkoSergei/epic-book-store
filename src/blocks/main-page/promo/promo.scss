@@ -44,14 +44,13 @@
   }
 
   &__border {
-    width: 339px;
+    width: 100%;
     border: 8px solid $border-color;
     padding: 44px 33px 20px 11px;
-    margin: 0 auto;
+    // margin: 0 auto;
     position: relative;
 
     @media (min-width: $screen-md) {
-      width: 560px;
       padding-bottom: 60px;
       padding-left: 32px;
     }
@@ -95,7 +94,13 @@
 
 
 .slider__item {
+  width: 339px;
+  margin: 0 auto;
   padding-top: 60px;
+
+  @media (min-width: $screen-md) {
+    width: 560px;
+  }
 
   @media (min-width: $screen-lg) {
     width: 1000px;
