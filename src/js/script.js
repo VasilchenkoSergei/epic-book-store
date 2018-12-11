@@ -1,5 +1,4 @@
 import insertElements from './modules/insertElements.js';
-import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
 
@@ -85,14 +84,14 @@ $('.slider').owlCarousel ({
 
 });
 
-$('.catalog__tabs').owlCarousel ({
-  dots: false,
-  loop: true,
-  center: false,
-  margin: 20,
-  autoWidth: true
+// $('.catalog__tabs').owlCarousel ({
+//   dots: false,
+//   loop: true,
+//   center: false,
+//   margin: 20,
+//   autoWidth: true
 
-});
+// });
 
 $('.novice__block').owlCarousel ({
   dots: false,
