@@ -105,18 +105,18 @@ function serve() {
   watch(`${dir.src}/js/**/*.js`).on('change', series(javascript, browserSync.reload));
 }
 
-function pug() {
+function pugHTML() {
   return src(`${dir.src}/pug/*.pug`)
       .pipe(plumber())
       .pipe(pug())
       .pipe(htmlbeautify({
         indentSize: 2,
       }))
-      .pipe(gulp.dest(dir.build))
+      .pipe(dest(dir.build))
       .pipe(browserSync.stream());
 }
 
-exports.pug = pug;
+exports.pugHTML = pugHTML;
 
 
 
