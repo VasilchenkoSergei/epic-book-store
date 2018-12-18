@@ -108,7 +108,8 @@ function serve() {
   });
   watch([`${dir.src}/scss/**/*.scss`,
          `${dir.src}/blocks/**/*.scss`], { delay: 100 }, styles);
-  watch(`${dir.src}/*.html`).on('change', series(copyHTML, browserSync.reload));
+  watch([`${dir.src}/pug/**/*.pug`,
+         `${dir.src}/blocks/**/*.pug`]).on('change', series(pugHTML, browserSync.reload));
   watch(`${dir.src}/js/**/*.js`).on('change', series(javascript, browserSync.reload));
 }
 
@@ -129,6 +130,6 @@ exports.pugHTML = pugHTML;
 
 exports.default = series(
   clean, 
-  parallel(copyHTML, copyImg, copyFonts, javascript, styles),
+  parallel(copyImg, copyFonts, pugHTML, javascript, styles),
   serve
 );

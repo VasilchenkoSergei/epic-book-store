@@ -13,9 +13,45 @@
 .slider {
   margin-bottom: 110px;
 
-    @media (min-width: $screen-md) {
-      margin-bottom: 55px;
+    & .owl-nav {
+      & .owl-next {
+        position: absolute;
+        right: 100px;
+        bottom: -80px;
+
+        @media (min-width: $screen-md) {
+          bottom: 0;
+          top: 0;
+          margin: auto;
+          right: -100px;
+        }
+
+        @media (min-width: $screen-lg) {
+          right: -50px;
+        }
+      }
+
+    & .owl-prev {
+      position: absolute;
+      left: 100px;
+      bottom: -80px;
+
+      @media (min-width: $screen-md) {
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        left: -100px;
+      }
+
+      @media (min-width: $screen-lg) {
+        left: -50px;
+      }
     }
+  }
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 55px;
+  }
 }
 
 .slider-textblock {

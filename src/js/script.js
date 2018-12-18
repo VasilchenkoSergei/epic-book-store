@@ -1,3 +1,5 @@
+import $ from '../../node_modules/jquery/dist/jquery.min.js';
+// import owlCarousel from '../node_modules/owl.carousel/dist/owl.carousel.min.js"'
 import insertElements from './modules/insertElements.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
@@ -10,7 +12,6 @@ const data = {
 };
 
 sendRequest(createDataAjax());
-// const dataAjax = createDataAjax();
 
 //Вешаем слушатель на табы
 const tabsWrap = document.querySelector('.j-catalog__tabs');
@@ -52,7 +53,6 @@ function createDataAjax() {
 //     const cartNumber = document.querySelector('.description__block4-box');
 //     cartNumber.innerHTML = cartNumber.innerHTML + '1';
 //   });
-
 
 
 

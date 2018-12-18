@@ -11,9 +11,6 @@
     <meta property="og:image" content="../img/icons/favicon/ms-icon-150x150.png">
     <meta name="robots" content="all">
     <title>Book-store</title>
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
     <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
@@ -26,10 +23,7 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner">
-            <a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a>
-            <span class="page-header__timetable">с 9:00 до 19:00</span>
-            <button class="page-header__toggle">
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
                 <div class="burgerline burgerline-1 no-animation"></div>
                 <div class="burgerline burgerline-2 no-animation"></div>
                 <div class="burgerline burgerline-3 no-animation"></div>
@@ -41,10 +35,7 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
                 </ul>
-            </nav>
-            <a class="page-header__cart-wrap" href="#">
-                <object class="page-header__cart" type="image/svg+xml" data="img/icons/icon_cart.svg" width="20" height="20"></object></a>
-                <a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="img/icons/icon_phone.svg" width="20" height="20"></object></a>
+            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="20" height="20"></object></a><a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="20" height="20"></object></a>
         </div>
     </header>
     <main>
@@ -58,9 +49,7 @@
                                 <h2 class="slider-textblock__title">Для поклонников сериала "Симпсоны" и всех, кому интересна математика</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture">
-                            <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" width="300" height="420" alt="Книга Симпсоны">
-                        </picture>
+                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" width="300" height="420" alt="Книга Симпсоны"></picture>
                     </article>
                     <article class="slider__item">
                         <div class="slider__item-block slider-textblock">
@@ -69,9 +58,7 @@
                                 <h2 class="slider-textblock__title">Книга про правила российского руководителя</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture">
-                            <img class="slider__item-img" src="img/45-tatuirovok-prodavana.jpg" width="300" height="420" alt="Книга Симпсоны">
-                        </picture>
+                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/45-tatuirovok-prodavana.jpg" width="300" height="420" alt="45 татуировок менеджера"></picture>
                     </article>
                     <article class="slider__item">
                         <div class="slider__item-block slider-textblock">
@@ -80,9 +67,7 @@
                                 <h2 class="slider-textblock__title">Искусство и практика обучайщейся организации</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture">
-                            <img class="slider__item-img" src="img/pyataya-distsiplina.jpg" width="300" height="420" alt="Книга Симпсоны">
-                        </picture>
+                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/pyataya-distsiplina.jpg" width="300" height="420" alt="Пятая дисциплина"></picture><button class="slider__item-btn slider__item-btn--left"></button><button class="slider__item-btn slider__item-btn--right"></button>
                     </article>
                 </div>
             </div>
@@ -90,28 +75,27 @@
         <section class="catalog">
             <div class="catalog__inner inner">
                 <ul class="catalog__tabs j-catalog__tabs">
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" data-type="all" href="#">Все</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" data-type="marketing" href="#">Маркетинг</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" data-type="science" href="#">Научпоп</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" data-type="business" href="#">Бизнес</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" data-type="creativity" href="#">Творчество</a></li>
+                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="all">Все</a></li>
+                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="marketing">Маркетинг</a></li>
+                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="science">Научпоп</a></li>
+                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="business">Бизнес</a></li>
+                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="creativity">Творчество</a></li>
                 </ul>
-                <div class="catalog__block">
-                </div>
+                <div class="catalog__block"></div>
                 <div class="catalog__pagination pagination">
-                <ul class="pagination__list">
-                    <li class="pagination__item"><a class="pagination__link" href="">1</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">5</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">6</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">7</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">8</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">9</a></li>
-                    <li class="pagination__item"><a class="pagination__link" href="">10</a></li>
-                </ul>
-            </div>
+                    <ul class="pagination__list">
+                        <li class="pagination__item"><a class="pagination__link" href="">1</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">5</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">6</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">7</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">8</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">9</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">10</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="offer">
@@ -125,16 +109,13 @@
                         <p class="offer__item">Доставка более чем в 300 городов России, по Москве и Санкт-Петербургу - бесплатно</p>
                     </div>
                 </div>
-                
             </div>
         </section>
         <section class="novice">
             <div class="novice__inner inner">
-                <h2 class="novice__title">Наши новинки</h2>
-                <a class="novice__link" href="">Все новинки</a>
-                <div class="novice__block owl-carousel owl-theme">
-                    <article class="product-card-mini">
-                        <a class="product-card-mini__picture-wrap" href="inner.html">
+                <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
+                <div class="novice__block">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
                             <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika" width="260" height="370"></picture>
                         </a><a class="product-card-mini__title-wrap" href="inner.html">
                             <h3 class="product-card-mini__title">Латеральная логика</h3>
@@ -167,22 +148,18 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner inner">
-            <a class="logo page-footer__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a>
-            <a href="#" class="page-footer__contacts">контакты</a>
-            <span class="page-footer__timetable">с 9:00 до 19:00</span>
+        <div class="page-footer__inner inner"><a class="logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="#">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
             <nav class="footer-nav">
                 <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">книги</a></li>
-                    <li class="footer-nav__item"><a href="recommendation.html" class="footer-nav__link">рекомендации</a></li>
-                    <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">контакты</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">книги</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="recommendation.html">рекомендации</a></li>
+                    <li class="footer-nav__item"><a class="footer-nav__link" href="contacts.html">контакты</a></li>
                 </ul>
             </nav>
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,10 @@
- form.form(action='#')
+form.form(action='#')
 	label
-		input(type="text"
-				name="user-mail"
-				placeholder="Ваша почта"
-				required
-			).form__mail.form__input
+		input(type="text" name="user-mail" placeholder="Ваша почта" required).form__mail.form__input
 	label
-		input(type="text"
-				name="user-message"
-				placeholder="Сообщение"
-				required
-			).form__message.form__input
+		input(type="text" name="user-message" placeholder="Сообщение" required).form__message.form__input
 	label
-		input(type="checkbox"
-				required
-			).form__checkbox Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>
+		input(type="checkbox" required).form__checkbox
+		span Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a>
 		span.form__checkbox--custom
 	button(type="submit").form__btn Отправить
