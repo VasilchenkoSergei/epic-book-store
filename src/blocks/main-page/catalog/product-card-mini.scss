@@ -1,6 +1,7 @@
 .product-card-mini {
   margin: 0 auto;
   width: 210px;
+  margin-bottom: 50px;
 
   @media (min-width: $screen-lg) {
     margin: 0 20px;
@@ -38,7 +39,7 @@
 
   &__price {
     display: block;
-    margin-bottom: 50px;
+    
     font-weight: 700;
   }
 }

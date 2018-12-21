@@ -21,5 +21,6 @@ block main
 block footer
 	include ../blocks/main-page/footer/footer.pug
 
-block append js
-	script(src="../node_modules/owl.carousel/dist/owl.carousel.min.js")
+block prepend js
+	script(src="js/jquery.min.js")
+	script(src="js/owl.carousel.min.js")

@@ -1,5 +1,3 @@
-import $ from '../../node_modules/jquery/dist/jquery.min.js';
-// import owlCarousel from '../node_modules/owl.carousel/dist/owl.carousel.min.js"'
 import insertElements from './modules/insertElements.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';

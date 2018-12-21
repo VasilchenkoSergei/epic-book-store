@@ -45,7 +45,7 @@ function copyHTML() {
 exports.copyHTML = copyHTML;
 
 function copyImg() {
-  return src(`${dir.src}/img/**/*.{jpg,jpeg,png,gif,svg,webp}`)
+  return src(`${dir.src}/img/**/*.{jpg,jpeg,png,gif,svg,webp,json}`)
     .pipe(plumber())
     .pipe(dest(`${dir.build}/img`));
 }
@@ -57,6 +57,16 @@ function copyFonts() {
     .pipe(dest(`${dir.build}/fonts`));
 }
 exports.copyFonts = copyFonts;
+
+function copyVendorsJs() {
+  return src([
+      './node_modules/picturefill/dist/picturefill.min.js',
+      './node_modules/owl.carousel/dist/owl.carousel.min.js',
+      './node_modules/jquery/dist/jquery.min.js',
+    ])
+    .pipe(dest(`${dir.build}/js`));
+}
+exports.copyVendorsJs = copyVendorsJs;
 
 function javascript() {
   return src(`${dir.src}/js/script.js`)
@@ -130,6 +140,6 @@ exports.pugHTML = pugHTML;
 
 exports.default = series(
   clean, 
-  parallel(copyImg, copyFonts, pugHTML, javascript, styles),
+  parallel(copyImg, copyFonts, copyVendorsJs, pugHTML, javascript, styles),
   serve
 );

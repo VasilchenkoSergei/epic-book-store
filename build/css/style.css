@@ -389,7 +389,8 @@ h2 {
 
 .product-card-mini {
   margin: 0 auto;
-  width: 210px; }
+  width: 210px;
+  margin-bottom: 50px; }
   @media (min-width: 1279px) {
     .product-card-mini {
       margin: 0 20px; } }
@@ -416,7 +417,6 @@ h2 {
     line-height: 24px; }
   .product-card-mini__price {
     display: block;
-    margin-bottom: 50px;
     font-weight: 700; }
 
 .pagination {
