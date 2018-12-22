@@ -87,16 +87,15 @@
     width: 100%;
     border: 8px solid $border-color;
     padding: 44px 33px 20px 11px;
-    // margin: 0 auto;
     position: relative;
 
     @media (min-width: $screen-md) {
       padding-bottom: 60px;
       padding-left: 32px;
+      padding-right: 32px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 590px;
       max-width: 600px;
       padding-bottom: 60px;
       padding-left: 32px;
@@ -139,8 +138,13 @@
   padding-top: 60px;
 
   @media (min-width: $screen-md) {
+    width: 485px;
+  }
+
+  @media (min-width: $screen-smd) {
     width: 560px;
   }
+
 
   @media (min-width: $screen-lg) {
     width: 1000px;
@@ -163,22 +167,3 @@
     padding-bottom: 50px;
   }
 }
-
-// .slider__item-btn {
-//   width: 40px;
-//   height: 40px;
-//   background-color: red;
-//   border-radius: 50%;
-//   border: none;
-//   margin-bottom: 40px;
-
-//   &--left {
-//     float: left;
-//     margin-left: 100px;
-//   }
-
-//     &--right {
-//     float: right;
-//     margin-right: 100px;
-//   }
-// }

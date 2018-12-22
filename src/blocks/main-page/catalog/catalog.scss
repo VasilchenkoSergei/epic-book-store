@@ -25,13 +25,13 @@
       margin-left: -90px;
       padding-left: 90px;
       padding-right: 90px;
+      overflow-x: visible;
     }
 
     @media (min-width: $screen-md) {
       padding-left: 90px;
       padding-right: 90px;
       width: 660px;
-      overflow-x: auto;
     }
 
     @media (min-width: $screen-lg) {
@@ -66,13 +66,11 @@
 
   &__block {
     margin: 0 auto;
-
-    @media (min-width: $screen-sm) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding-left: 0;
-    }
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
   }
 }
 

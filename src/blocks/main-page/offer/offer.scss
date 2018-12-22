@@ -9,10 +9,20 @@
   &__border {
     width: 339px;
     border: 8px solid $border-color;
-    padding: 49px 11px 20px 11px;
+    padding: 49px 15px 20px 15px;
     margin: 0 auto;
     margin-bottom: 110px;
     position: relative;
+
+    @media (min-width: $screen-md) {
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-right: 22px;
+      padding-left: 22px;
+    }
 
     &:before {
       content: '';
@@ -52,6 +62,7 @@
 
     @media (min-width: $screen-md) {
       width: calc(100% - 80px);
+      max-width: 1230px;
     }
   }
 
@@ -90,10 +101,18 @@
     line-height: 24px;
     position: relative;
     margin: 0 auto;
+
+    @media (min-width: $screen-lg) {
+      width: 250px;
+    }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 129px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 77px;
+    }
   }
 
   &__item:last-child {

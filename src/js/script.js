@@ -54,24 +54,14 @@ $('.slider').owlCarousel ({
   loop: true,
   center: true,
   nav: true,
-  // margin: 20,
+  margin: 20,
   responsive : {
       0 : {
           items : 1,
           navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
       }
   }
-
 });
-
-// $('.catalog__tabs').owlCarousel ({
-//   dots: false,
-//   loop: true,
-//   center: false,
-//   margin: 20,
-//   autoWidth: true
-
-// });
 
 $('.novice__block').owlCarousel ({
   dots: false,
@@ -87,9 +77,7 @@ $('.novice__block').owlCarousel ({
           items : 4,
       }
     }
-
 });
-
 
 $(window).width(function() {
   if ($(window).width() > 767) {
