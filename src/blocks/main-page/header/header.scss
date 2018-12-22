@@ -152,14 +152,6 @@
     font-weight: 700;
     font-size: 0.9rem;
 
-    &:link {
-      color: red;
-    }
-
-    &:active {
-      color: green;
-    }
-
     &:hover {
       color: $link-color-hover;
     }
@@ -167,7 +159,5 @@
     // &:visited {
     //   color: $link-color-visited;
     // }
-
-    
   }
 }

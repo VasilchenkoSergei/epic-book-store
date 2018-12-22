@@ -5,10 +5,12 @@ const bookCardTemplate = {
   setContent: function(data) {
     return `<a class="product-card-mini__picture-wrap" href="inner.html">
               <picture class="product-card-mini__picture">
-              <img class="product-card-mini__img" src="img/books/${data.uri}.png" alt="${data.uri}" width="210" height="300"></picture>
+                <source media="(min-width: 1920px)" srcset="img/books/${data.uri}_2x.png 2x"/>
+                <img class="product-card-mini__img" src="img/books/${data.uri}.png" alt="${data.uri}" width="210" height="300">
+              </picture>
             </a>
             <a class="product-card-mini__title-wrap" href="inner.html">
-                <h3 class="product-card-mini__title">${data.name}</h3>
+              <h3 class="product-card-mini__title">${data.name}</h3>
             </a>
             <p class="product-card-mini__descr">${data.desc}</p>
             <span class="product-card-mini__price">${data.price} &#8381;</span>`;

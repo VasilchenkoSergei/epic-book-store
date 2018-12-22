@@ -9,7 +9,7 @@ body {
   position: relative;
 }
 
-* {
+*, *:before, *:after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
@@ -46,8 +46,8 @@ h2 {
 @import '../blocks/main-page/footer/footer.scss';
 @import '../blocks/contacts-page/address/address.scss';
 @import '../blocks/contacts-page/question/question.scss';
+@import '../blocks/contacts-page/question/form.scss';
 @import '../blocks/contacts-page/invitation/invitation.scss';
 @import '../blocks/recommendation-page/books-block/books-block.scss';
 @import '../blocks/description-page/description/description.scss';
-
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';

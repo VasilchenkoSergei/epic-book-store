@@ -14,7 +14,7 @@
     <meta property="og:image" content="../img/favicon/apple-icon-180x180.png">
     <meta name="robots" content="all">
     <title>Book-store</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
@@ -26,11 +26,7 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
-                <div class="burgerline burgerline-1 no-animation"></div>
-                <div class="burgerline burgerline-2 no-animation"></div>
-                <div class="burgerline burgerline-3 no-animation"></div>
-            </button>
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store" width="127" height="14"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle"><span class="burgerline burgerline-1 no-animation"></span><span class="burgerline burgerline-2 no-animation"></span><span class="burgerline burgerline-3 no-animation"></span></button>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
@@ -56,7 +52,8 @@
                                 <h2 class="slider-textblock__title">Для поклонников сериала "Симпсоны" и всех, кому интересна математика</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" width="300" height="420" alt="Книга Симпсоны"></picture>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1920px)" srcset="img/simpsony-i-ikh-matematicheskie-sekrety_2x.png 2x"><img class="slider__item-img" src="img/simpsony-i-ikh-matematicheskie-sekrety.png" width="300" height="420" alt="Книга Симпсоны"></picture>
                     </article>
                     <article class="slider__item">
                         <div class="slider__item-block slider-textblock">
@@ -65,7 +62,8 @@
                                 <h2 class="slider-textblock__title">Книга про правила российского руководителя</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/45-tatuirovok-prodavana.jpg" width="300" height="420" alt="45 татуировок менеджера"></picture>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1920px)" srcset="img/45-tatuirovok-prodavana_2x.png 2x"><img class="slider__item-img" src="img/45-tatuirovok-prodavana.png" width="300" height="420" alt="45 татуировок менеджера"></picture>
                     </article>
                     <article class="slider__item">
                         <div class="slider__item-block slider-textblock">
@@ -74,7 +72,8 @@
                                 <h2 class="slider-textblock__title">Искусство и практика обучайщейся организации</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/pyataya-distsiplina.jpg" width="300" height="420" alt="Пятая дисциплина"></picture><button class="slider__item-btn slider__item-btn--left"></button><button class="slider__item-btn slider__item-btn--right"></button>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1280px)" srcset="img/pyataya-distsiplina_2x.png 2x"><img class="slider__item-img" src="img/pyataya-distsiplina.png" width="300" height="420" alt="Пятая дисциплина"></picture><button class="slider__item-btn slider__item-btn--left"></button><button class="slider__item-btn slider__item-btn--right"></button>
                     </article>
                 </div>
             </div>
@@ -120,28 +119,28 @@
                 <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
                 <div class="novice__block owl-carousel owl-theme">
                     <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika" width="260" height="370"></picture>
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/lateralnaya-logika.jpg" alt="lateralnaya-logika" width="260" height="370"></picture>
                         </a><a class="product-card-mini__title-wrap" href="inner.html">
                             <h3 class="product-card-mini__title">Латеральная логика</h3>
                         </a>
                         <p class="product-card-mini__text">Головоломный путь к нестандартному мышлению</p><span class="product-card-mini__price">500 &#8381;</span>
                     </article>
                     <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi" width="260" height="370"></picture>
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/putevoditel-po-lzhi.jpg" alt="putevoditel-po-lzhi" width="260" height="370"></picture>
                         </a><a class="product-card-mini__title-wrap" href="inner.html">
                             <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
                         </a>
                         <p class="product-card-mini__text">Критическое мышление в эпоху постправды</p><span class="product-card-mini__price">630 &#8381;</span>
                     </article>
                     <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki" width="260" height="370"></picture>
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/dao-fiziki.jpg" alt="dao-fiziki" width="260" height="370"></picture>
                         </a><a class="product-card-mini__title-wrap" href="inner.html">
                             <h3 class="product-card-mini__title">Дао физики</h3>
                         </a>
                         <p class="product-card-mini__text">Исследование параллелей между современной физикой и восточной философией</p><span class="product-card-mini__price">560 &#8381;</span>
                     </article>
                     <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno" width="260" height="370"></picture>
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/ne-ochevidno.jpg" alt="ne-ochevidno" width="260" height="370"></picture>
                         </a><a class="product-card-mini__title-wrap" href="inner.html">
                             <h3 class="product-card-mini__title">Не очевидно</h3>
                         </a>
@@ -164,7 +163,7 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.js" type="module"></script>
+    <script src="js/script.min.js" type="module"></script>
 </body>
 
 </html>

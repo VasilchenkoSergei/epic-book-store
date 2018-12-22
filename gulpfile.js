@@ -23,6 +23,8 @@ const svgmin = require('gulp-svgmin');
 const svgstore = require('gulp-svgstore');
 const ghpages = require('gh-pages');
 const path = require('path');
+const cssnano = require('gulp-cssnano');
+const postcssInlineSvg = require('postcss-inline-svg');
 
 function styles() {
   return src(`${dir.src}/scss/style.scss`)
@@ -32,7 +34,9 @@ function styles() {
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version']}),
     ]))
+    .pipe(cssnano())
     .pipe(sourcemaps.write('/'))
+    .pipe(rename('style.min.css'))
     .pipe(dest(`${dir.build}/css`))
     .pipe(browserSync.stream());
 }
@@ -51,6 +55,15 @@ function copyImg() {
     .pipe(dest(`${dir.build}/img`));
 }
 exports.copyImg = copyImg;
+
+function inlineSvg() {
+  return src(`${dir.src}/img/*.svg`)
+    .pipe(postcss([
+      postcssInlineSvg(),
+    ]))
+    .pipe(dest(`${dir.build}/img/`));
+}
+exports.inlineSvg = inlineSvg;
 
 function svgSprite() {
   return src(`${dir.src}/svg-sprite/*.svg`)

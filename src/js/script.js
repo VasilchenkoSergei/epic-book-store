@@ -75,6 +75,7 @@ $('.novice__block').owlCarousel ({
       },
       1279 : {
           items : 4,
+          center: false,
       }
     }
 });
