@@ -3,28 +3,30 @@
 
 <head>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <meta charset="UTF-8">
     <meta name="description" content="Книжный магазин">
     <meta name="keywords" content="книги, books, чтение">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Books">
     <meta property="og:description" content="Книжный магазин">
-    <meta property="og:image" content="../img/icons/favicon/ms-icon-150x150.png">
+    <meta property="og:image" content="../img/favicon/apple-icon-180x180.png">
     <meta name="robots" content="all">
     <title>Book-store</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
-    <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
 </head>
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
                 <div class="burgerline burgerline-1 no-animation"></div>
                 <div class="burgerline burgerline-2 no-animation"></div>
                 <div class="burgerline burgerline-3 no-animation"></div>
@@ -36,7 +38,11 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
                 </ul>
-            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="20" height="20"></object></a><a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="20" height="20"></object></a>
+            </nav><a class="page-header__cart-wrap" href="#"><svg class="page-header__cart" width="20" height="21">
+                    <use xlink:href="img/sprite.svg#icon_cart"></use>
+                </svg></a><a class="page-header__phone-wrap" href="tel:+79995554433"><svg class="page-header__phone" width="20" height="21">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                </svg></a>
         </div>
     </header>
     <main>
@@ -69,7 +75,7 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner inner"><a class="logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="#">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
+        <div class="page-footer__inner inner"><a class="logo page-footer__logo" href="index.html"><img src="img/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="contacts.html">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
             <nav class="footer-nav">
                 <ul class="footer-nav__list">
                     <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">книги</a></li>

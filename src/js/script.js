@@ -42,24 +42,6 @@ function createDataAjax() {
 }
 
 
-
-// const addToCart = document.querySelector('.description__block4-btn');
-
-//   addToCart.addEventListener('click', function(event) {
-//     event.preventDefault();
-    
-//     const cartNumber = document.querySelector('.description__block4-box');
-//     cartNumber.innerHTML = cartNumber.innerHTML + '1';
-//   });
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
 
 $('.page-header__toggle').on('click', function() {
@@ -76,7 +58,7 @@ $('.slider').owlCarousel ({
   responsive : {
       0 : {
           items : 1,
-          navText: ["<img src='img/icons/arrow_left.svg'>", "<img src='img/icons/arrow_right.svg'>"],
+          navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
       }
   }
 

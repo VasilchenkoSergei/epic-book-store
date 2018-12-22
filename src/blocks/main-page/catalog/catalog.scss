@@ -14,11 +14,11 @@
     display: flex;
     justify-content: space-between;
     background-color: $border-color;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding-top: 28px;
-    padding-left: 32px;
+    padding-bottom: 7px;
     margin-bottom: 41px;
-    padding-left: -200px;
+    padding-left: 32px;
 
     @media (min-width: $screen-sm) {
       width: calc(100% + 180px);
@@ -30,22 +30,25 @@
     @media (min-width: $screen-md) {
       padding-left: 90px;
       padding-right: 90px;
+      width: 660px;
+      overflow-x: auto;
     }
 
     @media (min-width: $screen-lg) {
-      padding-right: 200px;
-      margin-right: -300px;
+      // padding-right: 200px;
+      // margin-right: -300px;
     }
   }
 
   &__tabs-item {
-
-    @media (min-width: $screen-lg) {
-      margin-right: 31px;
-    }
+    margin-right: 31px;
 
     &:first-child .catalog__tabs-link {
       color: #1a1ff7;
+    }
+
+    &:last-child {
+      padding-right: 32px;
     }
   }
 

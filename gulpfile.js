@@ -19,7 +19,8 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const pug = require('gulp-pug');
 const htmlbeautify = require('gulp-html-beautify');
-
+const svgmin = require('gulp-svgmin');
+const svgstore = require('gulp-svgstore');
 const ghpages = require('gh-pages');
 const path = require('path');
 
@@ -51,6 +52,21 @@ function copyImg() {
 }
 exports.copyImg = copyImg;
 
+function svgSprite() {
+  return src(`${dir.src}/svg-sprite/*.svg`)
+    .pipe(svgmin(function (file) {
+      return {
+        plugins: [{
+          cleanupIDs: { minify: true }
+        }]
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(`${dir.build}/img/`));
+}
+exports.svgSprite = svgSprite;
+
 function copyFonts() {
   return src(`${dir.src}/fonts/**/*.{woff,woff2,ttf,eot,svg}`)
     .pipe(plumber())
@@ -63,6 +79,7 @@ function copyVendorsJs() {
       './node_modules/picturefill/dist/picturefill.min.js',
       './node_modules/owl.carousel/dist/owl.carousel.min.js',
       './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/svg4everybody/dist/svg4everybody.min.js',
     ])
     .pipe(dest(`${dir.build}/js`));
 }
@@ -121,6 +138,7 @@ function serve() {
   watch([`${dir.src}/pug/**/*.pug`,
          `${dir.src}/blocks/**/*.pug`]).on('change', series(pugHTML, browserSync.reload));
   watch(`${dir.src}/js/**/*.js`).on('change', series(javascript, browserSync.reload));
+  watch(`${dir.src}/svg-sprite/*.svg`).on('all', series(svgSprite, browserSync.reload));
 }
 
 function pugHTML() {
@@ -139,7 +157,7 @@ exports.pugHTML = pugHTML;
 
 
 exports.default = series(
-  clean, 
-  parallel(copyImg, copyFonts, copyVendorsJs, pugHTML, javascript, styles),
+  clean,
+  parallel(copyImg, copyFonts, copyVendorsJs, svgSprite, pugHTML, javascript, styles),
   serve
 );

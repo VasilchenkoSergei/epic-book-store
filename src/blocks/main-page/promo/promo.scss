@@ -19,6 +19,10 @@
         right: 100px;
         bottom: -80px;
 
+        &:hover {
+          fill:#ef529f;
+        }
+
         @media (min-width: $screen-md) {
           bottom: 0;
           top: 0;

@@ -12,6 +12,43 @@
     padding: 49px 11px 20px 11px;
     margin: 0 auto;
     margin-bottom: 110px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      background-color: $main-color;
+      top: -13px;
+      left: 60px;
+
+      @media (min-width: $screen-md) {
+        width: 170px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      background-color: $main-color;
+      bottom: -13px;
+      right: 60px;
+
+      @media (min-width: $screen-md) {
+        width: 170px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 400px;
+      }
+    }
 
     @media (min-width: $screen-md) {
       width: calc(100% - 80px);
@@ -61,6 +98,7 @@
 
   &__item:last-child {
     margin-bottom: 50px;
+    background-image: url(../img/sprite.svg#icon_map);
   }
 
   &__item:before {
@@ -73,5 +111,17 @@
     right: 0;
     margin: auto;
     top: -70px;
+  }
+
+  &__item:first-child:before {
+    background-image: url(../img/sprite.svg#icon_book);
+  }
+
+  &__item:nth-child(2):before {
+    background-image: url(../img/sprite.svg#icon_box);
+  }
+
+  &__item:first-child(3):before {
+    background-image: url(../img/sprite.svg#icon_delivery);
   }
 }

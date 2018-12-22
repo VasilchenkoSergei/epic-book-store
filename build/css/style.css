@@ -208,6 +208,8 @@ h2 {
     position: absolute;
     right: 100px;
     bottom: -80px; }
+    .slider .owl-nav .owl-next:hover {
+      fill: #ef529f; }
     @media (min-width: 767px) {
       .slider .owl-nav .owl-next {
         bottom: 0;
@@ -338,11 +340,11 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #e8e8e8;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding-top: 28px;
-  padding-left: 32px;
+  padding-bottom: 7px;
   margin-bottom: 41px;
-  padding-left: -200px; }
+  padding-left: 32px; }
   @media (min-width: 650px) {
     .catalog__tabs {
       width: calc(100% + 180px);
@@ -352,18 +354,16 @@ h2 {
   @media (min-width: 767px) {
     .catalog__tabs {
       padding-left: 90px;
-      padding-right: 90px; } }
-  @media (min-width: 1279px) {
-    .catalog__tabs {
-      padding-right: 200px;
-      margin-right: -300px; } }
+      padding-right: 90px;
+      width: 660px;
+      overflow-x: auto; } }
 
-@media (min-width: 1279px) {
-  .catalog__tabs-item {
-    margin-right: 31px; } }
-
-.catalog__tabs-item:first-child .catalog__tabs-link {
-  color: #1a1ff7; }
+.catalog__tabs-item {
+  margin-right: 31px; }
+  .catalog__tabs-item:first-child .catalog__tabs-link {
+    color: #1a1ff7; }
+  .catalog__tabs-item:last-child {
+    padding-right: 32px; }
 
 .catalog__tabs-link {
   font-weight: 500;
@@ -390,7 +390,8 @@ h2 {
 .product-card-mini {
   margin: 0 auto;
   width: 210px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
   @media (min-width: 1279px) {
     .product-card-mini {
       margin: 0 20px; } }
@@ -412,12 +413,14 @@ h2 {
     line-height: 30px;
     font-size: 1.5rem; }
   .product-card-mini__descr {
-    margin-bottom: 21px;
+    margin-bottom: 37px;
     font-style: italic;
     line-height: 24px; }
   .product-card-mini__price {
     display: block;
-    font-weight: 700; }
+    font-weight: 700;
+    position: absolute;
+    bottom: 0; }
 
 .pagination {
   margin-bottom: 63px; }
@@ -468,7 +471,36 @@ h2 {
     border: 8px solid #e8e8e8;
     padding: 49px 11px 20px 11px;
     margin: 0 auto;
-    margin-bottom: 110px; }
+    margin-bottom: 110px;
+    position: relative; }
+    .offer__border:before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      background-color: #f5f5f5;
+      top: -13px;
+      left: 60px; }
+      @media (min-width: 767px) {
+        .offer__border:before {
+          width: 170px; } }
+      @media (min-width: 1279px) {
+        .offer__border:before {
+          width: 400px; } }
+    .offer__border:after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 20px;
+      background-color: #f5f5f5;
+      bottom: -13px;
+      right: 60px; }
+      @media (min-width: 767px) {
+        .offer__border:after {
+          width: 170px; } }
+      @media (min-width: 1279px) {
+        .offer__border:after {
+          width: 400px; } }
     @media (min-width: 767px) {
       .offer__border {
         width: calc(100% - 80px); } }
@@ -511,7 +543,8 @@ h2 {
   .offer__item:not(:last-child) {
     margin-bottom: 129px; }
   .offer__item:last-child {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    background-image: url(../img/sprite.svg#icon_map); }
   .offer__item:before {
     content: '';
     width: 62px;
@@ -522,6 +555,12 @@ h2 {
     right: 0;
     margin: auto;
     top: -70px; }
+  .offer__item:first-child:before {
+    background-image: url(../img/sprite.svg#icon_book); }
+  .offer__item:nth-child(2):before {
+    background-image: url(../img/sprite.svg#icon_box); }
+  .offer__item:first-child(3):before {
+    background-image: url(../img/sprite.svg#icon_delivery); }
 
 .novice {
   position: relative;
@@ -582,7 +621,7 @@ h2 {
   background-color: #fff;
   height: 80px;
   position: relative;
-  padding-top: 15px; }
+  padding-top: 21px; }
   @media (min-width: 767px) {
     .page-footer {
       height: 50px; } }
@@ -596,7 +635,7 @@ h2 {
               justify-content: space-between; } }
   .page-footer__logo {
     display: block;
-    padding-bottom: 13px; }
+    margin-bottom: 10px; }
     @media (min-width: 767px) {
       .page-footer__logo {
         display: inline-block; } }
@@ -617,7 +656,7 @@ h2 {
     font-weight: 700;
     color: #000;
     position: absolute;
-    top: 27px;
+    top: 20px;
     right: 30px; }
     @media (min-width: 767px) {
       .page-footer__contacts {
@@ -841,6 +880,7 @@ h2 {
     bottom: 0;
     left: 0;
     background-color: #d7569c;
+    background-image: url(../img/sprite.svg#icon_wave);
     opacity: 0.8; }
   .invitation__inner {
     width: calc(100% - 82px);

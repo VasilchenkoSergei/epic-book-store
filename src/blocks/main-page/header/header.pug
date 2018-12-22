@@ -1,7 +1,7 @@
 header.page-header
 	.page-header__inner.inner
 		a(href="index.html").logo.page-header__logo
-			img(src="img/icons/logo_icon.png" alt="book store")
+			img(src="img/logo_icon.png" alt="book store")
 		span.page-header__timetable с 9:00 до 19:00
 		button.page-header__toggle
 				.burgerline.burgerline-1.no-animation
@@ -18,6 +18,8 @@ header.page-header
 				li.main-nav__item
 					a(href="tel:+78005008020").main-nav__link 8 800 500-80-20
 		a(href="#").page-header__cart-wrap
-			object(type="image/svg+xml" data="cart.svg" width="20" height="20").page-header__cart
+			svg(width="20" height="21").page-header__cart
+				use(xlink:href="img/sprite.svg#icon_cart")
 		a(href="tel:+79995554433").page-header__phone-wrap
-			object(type="image/svg+xml" data="phone.svg" width="20" height="20").page-header__phone
+			svg(width="20" height="21").page-header__phone
+				use(xlink:href="img/sprite.svg#icon_phone")
