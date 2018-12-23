@@ -29,12 +29,13 @@
     line-height: 40px;
     color: #fff;
     position: relative;
+    margin-bottom: 26px;
 
     &:before {
       content: '';
       position: absolute;
       width: 100px;
-      height: 100px;
+      height: 20px;
       border: 2px solid #fff;
       background-image: url(img/sprite.svg#icon_cart);
       background-position: center;

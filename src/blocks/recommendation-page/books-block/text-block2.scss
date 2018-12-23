@@ -1,0 +1,34 @@
+.text-block2 {
+  // width: 580px;
+  text-align: center;
+  grid-area: block2;
+  position: relative;
+  background-image: url(../img/text_block2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(6, 0, 255, 0.3) 0%, rgba(39, 44, 242, 0.8) 100%);
+    border-radius: 4px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  &__subtitle {
+    color: #fff;
+    position: relative;
+  }
+}

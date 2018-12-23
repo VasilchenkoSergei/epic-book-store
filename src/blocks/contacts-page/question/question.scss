@@ -11,9 +11,32 @@
     border: 8px solid $border-color;
     padding: 60px 20px 80px 20px;
     margin: 0 auto;
+    position: relative;
 
     @media (min-width: $screen-lg) {
       width: 1160px;
+    }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      background-color: $main-color;
+
+      @media (min-width: $screen-md) {
+        width: 400px;
+      }
+    }
+
+    &:before {
+      top: -13px;
+      left: 60px;
+    }
+
+    &:after {
+      bottom: -13px;
+      right: 60px;
     }
   }
 

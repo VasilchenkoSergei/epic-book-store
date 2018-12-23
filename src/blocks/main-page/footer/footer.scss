@@ -53,32 +53,3 @@
     }
   }
 }
-
-.footer-nav {
-  display: none;
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-  }
-
-  &__link {
-    color: #000;
-    font-weight: 700;
-    font-size: 0.9rem;
-
-    &:hover {
-      color: #1a1ff7;
-    }
-  }
-
-  @media (min-width: $screen-md) {
-    display: block;
-    // margin-left: 150px;
-  }
-
-  @media (min-width: $screen-lg) {
-    margin-left: 200px;
-  }
-}

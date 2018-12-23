@@ -1,0 +1,40 @@
+.text-block7 {
+  // height: 170px;
+  grid-area: block7;
+  padding-top: 20px;
+  text-align: center;
+  background-image: url(../img/text_block7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: $screen-md) {
+    padding-top: 67px;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #bc0d5f;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+  }
+
+  &__subtitle {
+    color: #fff;
+    position: relative;
+  }
+}

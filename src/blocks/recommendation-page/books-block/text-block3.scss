@@ -1,0 +1,30 @@
+.text-block3 {
+  // width: 300px;
+  grid-area: block3;
+  padding: 36px 20px;
+  box-shadow: none;
+
+  & .product-card-mini {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    & .product-card-mini__picture-wrap {
+      width: 260px;
+      height: 370px;
+    }
+
+    & .product-card-mini__title-wrap {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 38px;
+    line-height: 1.88rem;
+  }
+}

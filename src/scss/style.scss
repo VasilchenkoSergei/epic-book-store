@@ -17,13 +17,6 @@ body {
   text-decoration: none;
 }
 
-h2 {
-  line-height: 30px;
-  margin-bottom: 38px;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
 .inner {
   margin: 0 auto;
   width: calc(100% - 60px);
@@ -40,14 +33,26 @@ h2 {
 
 @import '../blocks/main-page/header/header.scss';
 @import '../blocks/main-page/promo/promo.scss';
+@import '../blocks/main-page/promo/slider.scss';
 @import '../blocks/main-page/catalog/catalog.scss';
+@import '../blocks/main-page/catalog/product-card-mini.scss';
+@import '../blocks/main-page/catalog/pagination.scss';
 @import '../blocks/main-page/offer/offer.scss';
 @import '../blocks/main-page/novice/novice.scss';
 @import '../blocks/main-page/footer/footer.scss';
+@import '../blocks/main-page/footer/footer-nav.scss';
 @import '../blocks/contacts-page/address/address.scss';
 @import '../blocks/contacts-page/question/question.scss';
 @import '../blocks/contacts-page/question/form.scss';
 @import '../blocks/contacts-page/invitation/invitation.scss';
 @import '../blocks/recommendation-page/books-block/books-block.scss';
+@import '../blocks/recommendation-page/books-block/text-block.scss';
+@import '../blocks/recommendation-page/books-block/text-block1.scss';
+@import '../blocks/recommendation-page/books-block/text-block2.scss';
+@import '../blocks/recommendation-page/books-block/text-block3.scss';
+@import '../blocks/recommendation-page/books-block/text-block4.scss';
+@import '../blocks/recommendation-page/books-block/text-block5.scss';
+@import '../blocks/recommendation-page/books-block/text-block6.scss';
+@import '../blocks/recommendation-page/books-block/text-block7.scss';
 @import '../blocks/description-page/description/description.scss';
 @import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';

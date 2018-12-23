@@ -3,7 +3,7 @@
   padding-bottom: 50px;
 
   &__inner {
-
+    position: relative;
   }
 
   &:before {
@@ -25,6 +25,7 @@
 
   &__title {
     font-size: 1.9rem;
+    margin-bottom: 38px;
 
     @media (min-width: $screen-md) {
       display: inline-block;
@@ -39,17 +40,17 @@
     margin-bottom: 40px;
 
     @media (min-width: $screen-md) {
-      float: right;
-      display: inline-block;
-      vertical-align: middle;
+      position: absolute;
+      right: 0;
+      top: 15px;
     }
 
     &:hover {
-      color: #6c73ff;
+      color: $link-color-hover;
     }
 
     &:visited {
-      color: #1316b0;
+      color: $link-color-visited;
     }
   }
 

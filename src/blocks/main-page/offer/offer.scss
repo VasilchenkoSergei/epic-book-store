@@ -7,7 +7,7 @@
   }
 
   &__border {
-    width: 339px;
+    width: 100%;
     border: 8px solid $border-color;
     padding: 49px 15px 20px 15px;
     margin: 0 auto;
@@ -24,14 +24,12 @@
       padding-left: 22px;
     }
 
-    &:before {
+    &:before, &:after {
       content: '';
       position: absolute;
       width: 150px;
       height: 20px;
       background-color: $main-color;
-      top: -13px;
-      left: 60px;
 
       @media (min-width: $screen-md) {
         width: 170px;
@@ -42,22 +40,14 @@
       }
     }
 
+    &:before {
+      top: -13px;
+      left: 60px;
+    }
+
     &:after {
-      content: '';
-      position: absolute;
-      width: 150px;
-      height: 20px;
-      background-color: $main-color;
       bottom: -13px;
       right: 60px;
-
-      @media (min-width: $screen-md) {
-        width: 170px;
-      }
-
-      @media (min-width: $screen-lg) {
-        width: 400px;
-      }
     }
 
     @media (min-width: $screen-md) {

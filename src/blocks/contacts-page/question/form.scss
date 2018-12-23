@@ -5,32 +5,42 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
 
-    & label {
+  @media (min-width: $screen-lg) {
+    align-items: baseline;
+  }
+
+  & label {
+
+    @media (min-width: $screen-md) {
       width: 45%;
-
-      @media (min-width: $screen-lg) {
-        width: 32%;
-      }
     }
 
-    & label:not(:nth-child(3)) {
-      margin-bottom: 55px;
+    @media (min-width: $screen-lg) {
+      width: 32%;
+    }
+  }
+
+  & label:not(:nth-child(3)) {
+    margin-bottom: 55px;
+  }
+
+  & label:nth-child(3) {
+
+    @media (min-width: $screen-md) {
+      width: 100%;
+      font-size: 0.88rem;
+      padding-right: 50%;
     }
 
-    & label:nth-child(3) {
-      width: 410px;
-      font-size: 0.85rem;
+    @media (min-width: $screen-lg) {
+      order: 1;
+      padding-right: 60%;
+    }
 
-      @media (min-width: $screen-md) {
-        width: 100%;
-        padding-right: 50%;
-      }
-
-      @media (min-width: $screen-lg) {
-        order: 1;
-        padding-right: 60%;
-      }
+    & a {
+      color: #2516b7;
     }
   }
 
@@ -47,6 +57,7 @@
     font-weight: 500;
     outline: none;
     margin-bottom: 65px;
+    padding-bottom: 5px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 0;
@@ -59,7 +70,7 @@
 
   &__btn {
     display: block;
-    width: 300px;
+    width: 220px;
     height: 50px;
     border-radius: 2px;
     background-color: $btn-color;
@@ -68,6 +79,11 @@
     color: #fff;
     margin: 39px auto 0 auto;
     transition: background-color 0.7s;
+    cursor: pointer;
+
+    @media (min-width: 360px) {
+      width: 300px;
+    }
 
     @media (min-width: $screen-md) {
       margin: 39px 0 0 0;
@@ -92,7 +108,7 @@
     &:checked + .form__checkbox--custom:before {
       content: "";
       display: block;
-      background-image: url(../img/icons/form_checkbox.png);
+      background-image: url(../img/form_checkbox.png);
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
@@ -112,6 +128,10 @@
       border: 4px solid #dcdcdc;
       position: relative;
       margin-right: 5px;
+
+      &:hover {
+        border: 4px solid $icon-hover;
+      }
     }
   }
 }

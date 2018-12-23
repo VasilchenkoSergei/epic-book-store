@@ -5,7 +5,7 @@
   position: relative;
 
   @media (min-width: $screen-lg) {
-    margin: 0 20px;
+    margin: 0 20px 50px 20px;
   }
 
   &__picture-wrap {
@@ -13,19 +13,22 @@
     width: 210px;
     height: 300px;
     margin-bottom: 33px;
-
-    &:hover {
-      box-shadow: 0 12px 33px 5px #f4d4e4;
-    }
   }
 
   &:hover .product-card-mini__price {
-    color: #ef529f;
+    color: $icon-hover;
+  }
+
+  &:hover .product-card-mini__picture-wrap {
+    box-shadow: 0 12px 33px 5px #f4d4e4;
   }
 
   &__title-wrap {
     display: block;
     margin-bottom: 28px;
+  }
+
+  &__title {
     font-weight: 700;
     color: #000;
     line-height: 30px;
