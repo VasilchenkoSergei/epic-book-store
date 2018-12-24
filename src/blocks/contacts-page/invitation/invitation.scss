@@ -1,11 +1,19 @@
 .invitation {
-  padding-top: 92px;
-  padding-bottom: 49px;
+  padding-top: 70px;
+  padding-bottom: 50px;
   text-align: center;
   background-image: url(../img/invitation_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 115px;
+  }
 
   &:before {
     content: '';
@@ -23,28 +31,19 @@
     margin: 0 auto;
   }
 
+  &__icon {
+    margin: 0 auto;
+    border: 2px solid white;
+    margin-bottom: 40px;
+  }
+
   &__title {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 40px;
     color: #fff;
-    position: relative;
     margin-bottom: 26px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 100px;
-      height: 20px;
-      border: 2px solid #fff;
-      background-image: url(img/sprite.svg#icon_cart);
-      background-position: center;
-      background-repeat: no-repeat;
-      left: 0;
-      right: 0;
-      top: -40px;
-      margin: auto;
-    }
+    position: relative;
 
     @media (min-width: $screen-md) {
         font-size: 2.25rem;

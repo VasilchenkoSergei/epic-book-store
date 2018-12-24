@@ -4,19 +4,10 @@ header.page-header
 			img(src="img/logo_icon.png" alt="book store" width="127" height="14")
 		span.page-header__timetable с 9:00 до 19:00
 		button.page-header__toggle
-			span.burgerline.burgerline-1.no-animation
-			span.burgerline.burgerline-2.no-animation
-			span.burgerline.burgerline-3.no-animation
-		nav.main-nav
-			ul.main-nav__list
-				li.main-nav__item
-					a(href="index.html").main-nav__link книги
-				li.main-nav__item
-					a(href="recommendation.html").main-nav__link рекомендации
-				li.main-nav__item
-					a(href="contacts.html").main-nav__link контакты
-				li.main-nav__item
-					a(href="tel:+78005008020").main-nav__link 8 800 500-80-20
+			span.page-header__burgerline.burgerline-1.no-animation
+			span.page-header__burgerline.burgerline-2.no-animation
+			span.page-header__burgerline.burgerline-3.no-animation
+		include main-nav.pug
 		a(href="#").page-header__cart-wrap
 			svg(width="20" height="21").page-header__cart
 				use(xlink:href="img/sprite.svg#icon_cart")

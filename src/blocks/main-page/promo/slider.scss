@@ -6,13 +6,14 @@
   }
 
   & .owl-nav {
+
     & .owl-next {
       position: absolute;
       right: 100px;
       bottom: -80px;
 
-      &:hover {
-        fill:#ef529f;
+      &:hover img {
+        fill: red;
       }
 
       @media (min-width: $screen-md) {

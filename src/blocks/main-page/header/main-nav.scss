@@ -1,0 +1,89 @@
+.main-nav {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+
+  &__list {
+    width: 196px;
+    height: 160px;
+    opacity: 0.9;
+    background-color: #f4d4e4;
+    position: absolute;
+    right: 0;
+    top: 33px;
+    padding-left: 52px;
+    padding-top: 19px;
+    z-index: 2;
+
+    @media (min-width: $screen-md) {
+      margin-left: 70px;
+      width: 280px;
+      margin-right: 20px;
+      position: static;
+      height: auto;
+      opacity: 1;
+      background-color: transparent;
+      padding-left: 0;
+      padding-top: 0;
+      z-index: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-xmd) {
+      margin-left: 250px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 450px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 18px;
+
+    &:last-child .main-nav__link {
+        color: #1a1ff7;
+      }
+
+    &:last-child {
+      margin-bottom: 0;
+      position: relative;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &:last-child:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      background-image: url(../img/icon_phone.svg);
+      left: -30px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &__link {
+    color: #000;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+
+    // &:visited {
+    //   color: $link-color-visited;
+    // }
+  }
+}

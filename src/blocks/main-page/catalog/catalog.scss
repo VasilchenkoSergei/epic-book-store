@@ -28,15 +28,10 @@
       overflow-x: visible;
     }
 
-    @media (min-width: $screen-md) {
-      padding-left: 90px;
-      padding-right: 90px;
-      width: 660px;
-    }
-
     @media (min-width: $screen-lg) {
-      // padding-right: 200px;
-      // margin-right: -300px;
+      width: 600px;
+      // padding-right: -500px;
+      // margin-right: 100px;
     }
   }
 

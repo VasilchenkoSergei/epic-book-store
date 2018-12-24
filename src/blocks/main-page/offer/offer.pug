@@ -4,7 +4,19 @@ section.offer
 			h2.offer__title Доставим в любое место
 			span.offer__subtitle // ну почти в любое
 			.offer__list
-				p.offer__item Покупаете книги на сайте в любом формате - бумажные, электронные или аудио
-				p.offer__item Мы подарим вам "Набор читателя" и добавим в посылку
-				p.offer__item Бесплатно доставляем заказы от 3000 по всей России
-				p.offer__item Доставка более чем в 300 городов России, по Москве и Санкт-Петербургу - бесплатно
+				.offer__item
+					svg(width="51" height="40").offer__icon
+						use(xlink:href="img/sprite.svg#icon_book")
+					p.offer__text Покупаете книги на сайте в любом формате - бумажные, электронные или аудио
+				.offer__item
+					svg(width="69" height="40").offer__icon
+						use(xlink:href="img/sprite.svg#icon_box")
+					p.offer__text Мы подарим вам "Набор читателя" и добавим в посылку
+				.offer__item
+					svg(width="58" height="42").offer__icon
+						use(xlink:href="img/sprite.svg#icon_delivery")
+					p.offer__text Бесплатно доставляем заказы от 3000 по всей России
+				.offer__item
+					svg(width="56" height="42").offer__icon
+						use(xlink:href="img/sprite.svg#icon_map")
+					p.offer__text Доставка более чем в 300 городов России, по Москве и Санкт-Петербургу - бесплатно

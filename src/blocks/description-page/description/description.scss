@@ -1,4 +1,13 @@
 .description {
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 1fr 425px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6" "block7";
+
+  &__block1 {
+    grid-area: block1;
+  }
 
   &__block1-author {
     font-size: 0.88rem;
@@ -18,29 +27,141 @@
     margin-bottom: 35px;
   }
 
+  &__block2 {
+    grid-area: block2;
+  }
+
   &__block2-picture {
     width: 300px;
     height: 425px;
-    margin-bottom: 40px;
   }
 
   &__block2-img {
     width: 100%;
     height: auto;
+    margin-bottom: 40px;
+  }
+
+  &__block3 {
+    grid-area: block3;
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &__block3-name-block {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block3-value-block {
+    display: flex;
+    flex-direction: column;
   }
 
   &__block3-name {
-    display: inline-block;
-    vertical-align: middle;
     font-size: 0.88rem;
     color: #ababab;
     font-weight: 500;
+    margin-bottom: 27px;
   }
 
   &__block3-value {
-    display: inline-block;
-    vertical-align: middle;
     font-size: 0.88rem;
     font-weight: 500;
+    margin-bottom: 27px;
+
+    &:last-child {
+      font-weight: 700;
+      font-size: 1rem;
+    }
   }
+
+  &__block4 {
+    grid-area: block4;
+  }
+
+  &__block4-box {
+    width: 80px;
+    height: 50px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after {
+      content: 'шт.';
+      position: absolute;
+      width: 25px;
+      height: 9px;
+      right: -40px;
+      top: 0;
+      bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  &__block4-btn {
+    width: 260px;
+    height: 50px;
+    background-color: $btn-color;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__block4-text {
+    font-size: 0.88rem;
+    font-style: italic;
+    padding-left: 27px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      background-image: url(../img/icon_like.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      width: 16px;
+      height: 13px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__block5 {
+    grid-area: block5;
+  }
+
+  &__block5-title {
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+  }
+
+  &__block5-descr {
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
