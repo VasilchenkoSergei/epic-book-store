@@ -82,8 +82,8 @@
       color: $link-color-hover;
     }
 
-    // &:visited {
-    //   color: $link-color-visited;
-    // }
+    &:visited {
+      color: $link-color-visited;
+    }
   }
 }
