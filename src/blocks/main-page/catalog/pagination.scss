@@ -1,6 +1,6 @@
 .pagination {
   margin-bottom: 63px;
-  
+
   &__list {
     display: flex;
     padding-left: 41px;
@@ -22,13 +22,13 @@
         color: #ef529f;
       }
     }
-  }
 
-  &__item:hover {
-    background-color: #f4d4e4;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    &:hover {
+      background-color: #f4d4e4;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
   }
 
   &__link {

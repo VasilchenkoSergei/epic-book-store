@@ -3,7 +3,7 @@ mixin product-card-mini(name, alt, title, price)
     a(href="inner.html").product-card-mini__picture-wrap
       picture.product-card-mini__picture
         img(src=`img/${name}.jpg` alt= alt width="260" height="370").product-card-mini__img
-    a(href="inner.html").product-card-mini__title-wrap
+    a(href="description.html").product-card-mini__title-wrap
       h3.product-card-mini__title #{title}
     block
     span.product-card-mini__price #{price} &#8381;

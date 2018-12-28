@@ -26,7 +26,8 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store" width="127" height="14"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle"><span class="page-header__burgerline burgerline-1 no-animation"></span><span class="page-header__burgerline burgerline-2 no-animation"></span><span class="page-header__burgerline burgerline-3 no-animation"></span></button>
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store" width="127" height="14"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
+            <div class="page-header__toggle"><span class="page-header__burgerline burgerline-1 no-animation"></span><span class="page-header__burgerline burgerline-2 no-animation"></span><span class="page-header__burgerline burgerline-3 no-animation"></span></div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
@@ -44,47 +45,89 @@
     <main>
         <section class="description">
             <div class="description__inner inner">
-                <div class="description__block1">
-                    <p class="description__block1-author">Эдди Юн</p>
-                    <h2 class="description__block1-title">Супер&shy;потребители</h2>
-                    <p class="description__block1-descr">Кто это и почему они так важны для вашего бизнеса</p>
+                <div class="description__name">
+                    <p class="description__name-author">Эдди Юн</p>
+                    <h2 class="description__name-title">Супер&shy;потребители</h2>
+                    <p class="description__name-descr">Кто это и почему они так важны для вашего бизнеса</p>
                 </div>
-                <div class="description__block2">
-                    <picture class="description__block2-picture">
-                        <source media="(min-width: 1920px)" srcset="img/books/superpotrebiteli_2x.png 2x"><img class="description__block2-img" src="img/books/superpotrebiteli.png" alt="книга суперпотребители"></picture>
+                <div class="description__front">
+                    <picture class="description__front-picture">
+                        <source media="(min-width: 1920px)" srcset="img/books/superpotrebiteli_2x.png 2x"><img class="description__front-img" src="img/books/superpotrebiteli.png" alt="книга суперпотребители"></picture>
                 </div>
-                <div class="description__block3">
-                    <div class="description__block3-name-block"><span class="description__block3-name">Артикул</span><span class="description__block3-name">В наличии</span><span class="description__block3-name">Издательство</span><span class="description__block3-name">Цена</span></div>
-                    <div class="description__block3-value-block"><span class="description__block3-value">10907063</span><span class="description__block3-value">5 шт.</span><span class="description__block3-value">Мосгорсвет</span><span class="description__block3-value">800 &#8381;</span></div>
+                <div class="description__characters">
+                    <div class="description__characters-name-block"><span class="description__characters-name">Артикул</span><span class="description__characters-name">В наличии</span><span class="description__characters-name">Издательство</span><span class="description__characters-name">Цена</span></div>
+                    <div class="description__characters-value-block"><span class="description__characters-value">10907063</span><span class="description__characters-value">5 шт.</span><span class="description__characters-value">Мосгорсвет</span><span class="description__characters-value">800 &#8381;</span></div>
                 </div>
-                <div class="description__block4">
-                    <div class="description__block4-box">1</div><button class="description__block4-btn">Добавить в корзину</button>
-                    <p class="description__block4-text"><span>20</span> людям понравилась эта книга</p>
+                <div class="description__button"><input class="description__button-box" type="text"><button class="description__button-btn">Добавить в корзину</button>
+                    <p class="description__button-text"><span>20</span> людям понравилась эта книга</p>
                 </div>
-                <div class="description__block5">
-                    <h3 class="description__block5-title">Короткое описание</h3>
-                    <p class="description__block5-descr"> В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
-                    <p class="description__block5-descr">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p>
+                <div class="description__about">
+                    <h3 class="description__about-title">Короткое описание</h3>
+                    <p class="description__about-descr"> В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+                    <p class="description__about-descr">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p>
                 </div>
-                <div class="description__block6">
-                    <div class="description__block6-item"><svg class="description__block6-icon" width="15" height="15">
+                <div class="description__socials">
+                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_facebook"></use>
-                        </svg><span class="description__block6-facebook">20</span></div>
-                    <div class="description__block6-item"><svg class="description__block6-icon" width="15" height="15">
+                        </svg><span class="description__socials-facebook">20</span></div>
+                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
-                        </svg><span class="description__block6-vkontakte">30</span></div>
-                    <div class="description__block6-item"><svg class="description__block6-icon" width="15" height="15">
+                        </svg><span class="description__socials-vkontakte">30</span></div>
+                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_like"></use>
-                        </svg><span class="description__block6-like">50</span></div>
-                    <div class="description__block6-item"><svg class="description__block6-icon" width="15" height="15">
-                            <use xlink:href="img/sprite.svg#icon_dislike"></use>
-                        </svg><span class="description__block6-dislike">10</span></div>
+                        </svg><span class="description__socials-like">50</span></div>
+                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon_like"></use>
+                        </svg><span class="description__socials-dislike">10</span></div>
                 </div>
-                <div class="description__block7">
-                    <picture class="description__block7-picture"><img class="description__block7-img" src="img/book_screen1.jpg" alt="Страница 1" width="" height=""></picture>
-                    <picture class="description__block7-picture"><img class="description__block7-img" src="img/book_screen2.jpg" alt="Страница 2" width="" height=""></picture>
-                    <picture class="description__block7-picture"><img class="description__block7-img" src="img/book_screen3.jpg" alt="Страница 3" width="" height=""></picture>
+                <div class="description__pages">
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen1.jpg" alt="Страница 1" width="120" height="139"></picture>
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen2.jpg" alt="Страница 2" width="120" height="139"></picture>
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen3.jpg" alt="Страница 3" width="120" height="139"></picture>
                 </div>
+            </div>
+        </section>
+        <section class="novice">
+            <div class="novice__inner inner">
+                <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
+                <div class="novice__block owl-carousel owl-theme">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/lateralnaya-logika.jpg" alt="lateralnaya-logika" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Латеральная логика</h3>
+                        </a>
+                        <p class="product-card-mini__text">Головоломный путь к нестандартному мышлению</p><span class="product-card-mini__price">500 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/putevoditel-po-lzhi.jpg" alt="putevoditel-po-lzhi" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
+                        </a>
+                        <p class="product-card-mini__text">Критическое мышление в эпоху постправды</p><span class="product-card-mini__price">630 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/dao-fiziki.jpg" alt="dao-fiziki" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Дао физики</h3>
+                        </a>
+                        <p class="product-card-mini__text">Исследование параллелей между современной физикой и восточной философией</p><span class="product-card-mini__price">560 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/ne-ochevidno.jpg" alt="ne-ochevidno" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Не очевидно</h3>
+                        </a>
+                        <p class="product-card-mini__text">Как выявлять тренды раньше других</p><span class="product-card-mini__price">365 &#8381;</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="invitation">
+            <div class="invitation__inner"><svg class="invitation__icon" width="100" height="20">
+                    <use xlink:href="img/sprite.svg#icon_wave"></use>
+                </svg>
+                <h2 class="invitation__title">Мы открыли для вас уютную библиотеку</h2>
+                <p class="invitation__subtitle">Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
             </div>
         </section>
     </main>

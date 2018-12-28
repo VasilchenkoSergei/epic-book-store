@@ -1,72 +1,85 @@
 .description {
-  display: grid;
-  margin: 0 auto;
-  grid-template-rows: 1fr 425px 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6" "block7";
 
-  &__block1 {
-    grid-area: block1;
+  &__inner {
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "name" "front" "characters" "button" "about" "socials";
+
+    @media (min-width: $screen-md) {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "front" "name"
+                            "front" "characters"
+                            "button" "button"
+                            "about" "about"
+                            "socials" "socials";
+    }
   }
 
-  &__block1-author {
+  &__name {
+    grid-area: name;
+  }
+
+  &__name-author {
     font-size: 0.88rem;
     font-weight: 700;
     margin-bottom: 20px;
   }
 
-  &__block1-title {
+  &__name-title {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 20px;
   }
 
-  &__block1-descr {
+  &__name-descr {
     font-weight: 500;
     line-height: 1.5rem;
     margin-bottom: 35px;
   }
 
-  &__block2 {
-    grid-area: block2;
+  &__front {
+    grid-area: front;
   }
 
-  &__block2-picture {
+  &__front-picture {
     width: 300px;
     height: 425px;
   }
 
-  &__block2-img {
+  &__front-img {
     width: 100%;
     height: auto;
     margin-bottom: 40px;
   }
 
-  &__block3 {
-    grid-area: block3;
+  &__characters {
+    grid-area: characters;
     display: flex;
     margin-bottom: 32px;
   }
 
-  &__block3-name-block {
+  &__characters-name-block {
     width: 160px;
     display: flex;
     flex-direction: column;
   }
 
-  &__block3-value-block {
+  &__characters-value-block {
     display: flex;
     flex-direction: column;
   }
 
-  &__block3-name {
+  &__characters-name {
     font-size: 0.88rem;
     color: #ababab;
     font-weight: 500;
     margin-bottom: 27px;
   }
 
-  &__block3-value {
+  &__characters-value {
     font-size: 0.88rem;
     font-weight: 500;
     margin-bottom: 27px;
@@ -77,11 +90,11 @@
     }
   }
 
-  &__block4 {
-    grid-area: block4;
+  &__button {
+    grid-area: button;
   }
 
-  &__block4-box {
+  &__button-box {
     width: 80px;
     height: 50px;
     background-color: #ddd;
@@ -89,6 +102,7 @@
     line-height: 50px;
     font-weight: 500;
     border-radius: 2px;
+    border: none;
     position: relative;
     margin-bottom: 20px;
 
@@ -102,9 +116,13 @@
       bottom: 0;
       font-weight: 500;
     }
+
+    &:hover {
+      background-color: #ececec;
+    }
   }
 
-  &__block4-btn {
+  &__button-btn {
     width: 260px;
     height: 50px;
     background-color: $btn-color;
@@ -114,10 +132,20 @@
     border: none;
     border-radius: 2px;
     margin: 0 auto;
+    cursor: pointer;
     margin-bottom: 20px;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $btn-color-hover;
+    }
+
+    &:visited {
+      background-color: $btn-color-visited;
+    }
   }
 
-  &__block4-text {
+  &__button-text {
     font-size: 0.88rem;
     font-style: italic;
     padding-left: 27px;
@@ -126,7 +154,7 @@
 
     &:before {
       content: '';
-      background-image: url(../img/icon_like.svg);
+      background-image: url(../img/icon_heart.svg);
       background-repeat: no-repeat;
       background-position: center;
       position: absolute;
@@ -137,23 +165,47 @@
     }
   }
 
-  &__block5 {
-    grid-area: block5;
+  &__about {
+    grid-area: about;
   }
 
-  &__block5-title {
+  &__about-title {
     font-size: 1.5rem;
     margin-bottom: 22px;
   }
 
-  &__block5-descr {
+  &__about-descr {
     font-weight: 500;
     line-height: 1.5rem;
     margin-bottom: 35px;
   }
 
+  &__socials {
+    grid-area: socials;
+    width: 280px;
+    margin-bottom: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__socials-item {
+    display: flex;
+    align-items: center;
+  }
 
+  &__socials-item:last-child .description__socials-icon {
+    transform: scale(1, -1);
+  }
+
+  &__socials-icon {
+    margin-right: 10px;
+  }
+
+  // &__pages {
+  //   grid-area: pages;
+  //     // display: block;
+
+  // }
 
 
 
