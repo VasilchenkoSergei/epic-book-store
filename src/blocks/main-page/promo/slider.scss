@@ -20,11 +20,11 @@
         bottom: 0;
         top: 0;
         margin: auto;
-        right: -80px;
+        right: -60px;
       }
 
       @media (min-width: $screen-lg) {
-        right: -80px;
+        right: -20px;
       }
     }
 
@@ -37,11 +37,11 @@
         bottom: 0;
         top: 0;
         margin: auto;
-        left: -80px;
+        left: -60px;
       }
 
       @media (min-width: $screen-lg) {
-        left: -80px;
+        left: -20px;
       }
     }
   }
@@ -60,7 +60,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      width: 1000px;
+      width: 980px;
       display: flex;
       justify-content: space-between;
       margin-bottom: 100px;

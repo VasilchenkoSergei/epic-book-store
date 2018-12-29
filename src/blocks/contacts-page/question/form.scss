@@ -52,7 +52,7 @@
     position: relative;
   }
 
-  &__mail:invalid + .form__mail-error::before {
+  &__mail:invalid + .form__mail-error:before {
     content: 'Вы не ввели почту';
     position: absolute;
     top: -25px;

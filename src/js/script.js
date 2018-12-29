@@ -94,14 +94,14 @@ $('.description-page__slider').owlCarousel ({
   }
 });
 
-$(window).width(function() {
-  if ($(window).width() > 767) {
-    $('.novice__block').trigger('destroy.owl.carousel');
-  }
-  else {
-    return false;
-  }
-});
+// $(window).width(function() {
+//   if ($(window).width() > 767) {
+//     $('.novice__block').trigger('destroy.owl.carousel');
+//   }
+//   else {
+//     return false;
+//   }
+// });
 
 //SHOW PAGE
 

@@ -5,33 +5,49 @@
     @media (min-width: $screen-sm) {
       width: calc(100% - 180px);
     }
+
+    @media (min-width: $screen-lg) {
+      width: calc(100% - 120px);
+    }
   }
 
-  &__tabs {
+  &__wrap {
     height: 50px;
     width: calc(100% + 60px);
-    margin-left: -30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: $border-color;
-    overflow-x: scroll;
+    margin: 0 auto;
     padding-top: 28px;
     padding-bottom: 7px;
+    margin-left: -30px;
     margin-bottom: 41px;
-    padding-left: 32px;
+    padding-left: 30px;
+    background-color: $border-color;
+
 
     @media (min-width: $screen-sm) {
       width: calc(100% + 180px);
       margin-left: -90px;
       padding-left: 90px;
-      padding-right: 90px;
-      overflow-x: visible;
     }
 
     @media (min-width: $screen-lg) {
-      width: 600px;
-      // padding-right: -500px;
-      // margin-right: 100px;
+      width: calc(100% + 320px);
+      margin-left: -160px;
+      padding-left: 160px;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    height: 50px;
+
+    @media (min-width: $screen-sm) {
+      overflow-x: visible;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 550px;
     }
   }
 

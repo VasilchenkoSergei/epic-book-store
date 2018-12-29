@@ -4,6 +4,10 @@
 
   &__inner {
     position: relative;
+
+    & .owl-carousel {
+      width: auto;
+    }
   }
 
   &:before {
@@ -56,9 +60,8 @@
 
   &__block {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    margin-right: 40px;
+    margin-right: -40px;
 
     & .product-card-mini {
       width: 260px;
