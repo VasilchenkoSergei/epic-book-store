@@ -21,6 +21,7 @@ section.description
 				span.description__characters-value 800 &#8381;
 		.description__button
 			input(type="text").description__button-box
+			span.description__button-span шт.
 			button.description__button-btn Добавить в корзину
 			p.description__button-text <span>20</span> людям понравилась эта книга
 		.description__about
@@ -29,22 +30,22 @@ section.description
 			p.description__about-descr Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.
 			button.description__about-btn Показать полностью
 		.description__socials
-			.description__socials-item
+			a(href="#").description__socials-item.description__socials-facebook
 				svg(width="20" height="20").description__socials-icon
 					use(xlink:href="img/sprite.svg#icon_facebook")
-				span.description__socials-facebook 20
-			.description__socials-item
+				span.description__socials-number 20
+			a(href="#").description__socials-item.description__socials-vkontakte
 				svg(width="20" height="20").description__socials-icon
 					use(xlink:href="img/sprite.svg#icon_vkontakte")
-				span.description__socials-vkontakte 30
-			.description__socials-item
+				span.description__socials-number 30
+			button.description__socials-item.description__socials-like
 				svg(width="20" height="20").description__socials-icon
 					use(xlink:href="img/sprite.svg#icon_like")
-				span.description__socials-like 50
-			.description__socials-item
+				span.description__socials-number 50
+			button.description__socials-item.description__socials-dislike
 				svg(width="20" height="20").description__socials-icon
 					use(xlink:href="img/sprite.svg#icon_like")
-				span.description__socials-dislike 10
+				span.description__socials-number 10
 		.description__pages
 			picture.description__pages-picture
 				img(src="img/book_screen1.jpg" alt="Страница 1" width="120" height="139").description__pages-img

@@ -150,13 +150,14 @@
     @media (min-width: $screen-md) {
       display: flex;
       flex-wrap: wrap;
-      width: 370px;
+      width: 390px;
       padding-left: 18px;
       margin-bottom: 0;
     }
 
     @media (min-width: $screen-lg) {
       padding-left: 32px;
+      width: 405px;
     }
   }
 
@@ -165,27 +166,23 @@
     height: 50px;
     background-color: #ddd;
     text-align: center;
-    line-height: 50px;
+    line-height: 3.13rem;
     font-weight: 500;
     border-radius: 2px;
     border: none;
     position: relative;
     margin-bottom: 20px;
-
-    &:before {
-      content: 'шт.';
-      position: absolute;
-      width: 25px;
-      height: 9px;
-      right: 40px;
-      top: 0;
-      bottom: 0;
-      font-weight: 500;
-    }
+    margin-right: 14px;
 
     &:hover {
       background-color: #ececec;
     }
+  }
+
+  &__button-span {
+    font-weight: 500;
+    color: #3c3c3c;
+    line-height: 3.13rem;
   }
 
   &__button-btn {
@@ -298,6 +295,7 @@
     height: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media (min-width: $screen-md) {
       margin-top: 31px;
@@ -307,6 +305,9 @@
   &__socials-item {
     display: flex;
     align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
   }
 
   &__socials-item:last-child .description__socials-icon {
@@ -314,11 +315,15 @@
   }
 
   &__socials-icon {
-    margin-right: 10px;
+    margin-right: 7px;
 
     &:hover {
       fill: red;
     }
+  }
+
+  &__socials-number {
+    color: #000;
   }
 
   &__pages {
@@ -327,7 +332,7 @@
 
     @media (min-width: $screen-md) {
       display: block;
-      width: 260px;
+      width: 262px;
       height: 120px;
       border: 4px solid #e8e8e8;
       padding: 17px 7px 14px 7px;
@@ -343,17 +348,44 @@
     }
   }
 
-  &__pages-img {
+  &__pages-picture {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #dcdcdc;
+      opacity: 0.7;
+
+      &:before {
+        content: '';
+        background-image: url(../img/icon_plus.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
 
     @media (min-width: $screen-md) {
-      width: 77px;
+      width: 7px;
       height: 90px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       width: 120px;
       height: 139px;
     }
+  }
+
+  &__pages-img {
+    width: 100%;
+    height: auto;
   }
 
 

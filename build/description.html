@@ -58,7 +58,7 @@
                     <div class="description__characters-name-block"><span class="description__characters-name">Артикул</span><span class="description__characters-name">В наличии</span><span class="description__characters-name">Издательство</span><span class="description__characters-name">Цена</span></div>
                     <div class="description__characters-value-block"><span class="description__characters-value">10907063</span><span class="description__characters-value">5 шт.</span><span class="description__characters-value">Мосгорсвет</span><span class="description__characters-value">800 &#8381;</span></div>
                 </div>
-                <div class="description__button"><input class="description__button-box" type="text"><button class="description__button-btn">Добавить в корзину</button>
+                <div class="description__button"><input class="description__button-box" type="text"><span class="description__button-span">шт.</span><button class="description__button-btn">Добавить в корзину</button>
                     <p class="description__button-text"><span>20</span> людям понравилась эта книга</p>
                 </div>
                 <div class="description__about">
@@ -66,20 +66,15 @@
                     <p class="description__about-descr"> В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
                     <p class="description__about-descr">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p><button class="description__about-btn">Показать полностью</button>
                 </div>
-                <div class="description__socials">
-                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
+                <div class="description__socials"><a class="description__socials-item description__socials-facebook" href="#"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_facebook"></use>
-                        </svg><span class="description__socials-facebook">20</span></div>
-                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
+                        </svg><span class="description__socials-number">20</span></a><a class="description__socials-item description__socials-vkontakte" href="#"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
-                        </svg><span class="description__socials-vkontakte">30</span></div>
-                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
+                        </svg><span class="description__socials-number">30</span></a><button class="description__socials-item description__socials-like"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_like"></use>
-                        </svg><span class="description__socials-like">50</span></div>
-                    <div class="description__socials-item"><svg class="description__socials-icon" width="20" height="20">
+                        </svg><span class="description__socials-number">50</span></button><button class="description__socials-item description__socials-dislike"><svg class="description__socials-icon" width="20" height="20">
                             <use xlink:href="img/sprite.svg#icon_like"></use>
-                        </svg><span class="description__socials-dislike">10</span></div>
-                </div>
+                        </svg><span class="description__socials-number">10</span></button></div>
                 <div class="description__pages">
                     <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen1.jpg" alt="Страница 1" width="120" height="139"></picture>
                     <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen2.jpg" alt="Страница 2" width="120" height="139"></picture>
@@ -87,6 +82,13 @@
                 </div>
             </div>
         </section>
+        <div class="description-page">
+            <div class="description-page__slider">
+                <picture class="description-page__current"><img class="description-page__img" src="img/book_screen_hq.png" alt="Страница книги" width="332" height="440"></picture>
+                <picture class="description-page__current"><img class="description-page__img" src="img/book_screen_hq.png" alt="Страница книги" width="332" height="440"></picture>
+                <picture class="description-page__current"><img class="description-page__img" src="img/book_screen_hq.png" alt="Страница книги" width="332" height="440"></picture>
+            </div><button class="description-page__close">&#10006;</button>
+        </div>
         <section class="novice">
             <div class="novice__inner inner">
                 <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
