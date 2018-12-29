@@ -3,50 +3,93 @@
   &__inner {
     display: grid;
     margin: 0 auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-columns: 1fr;
     grid-template-areas: "name" "front" "characters" "button" "about" "socials";
 
     @media (min-width: $screen-md) {
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "front" "name"
-                            "front" "characters"
-                            "button" "button"
-                            "about" "about"
-                            "socials" "socials";
+      margin-bottom: 97px;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 260px 1fr;
+      grid-gap: 22px;
+      grid-template-areas: "front name"
+                            "front characters"
+                            "pages button"
+                            "about about"
+                            "socials socials";
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 97px;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 160px 320px 1fr;
+      grid-gap: 22px;
+      grid-template-areas: "pages front name"
+                            "pages front characters"
+                            "pages front button"
+                            ". about about"
+                            ". socials socials";
     }
   }
 
   &__name {
     grid-area: name;
+
+    @media (min-width: $screen-md) {
+      padding-left: 18px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 32px;
+    }
   }
 
   &__name-author {
     font-size: 0.88rem;
     font-weight: 700;
     margin-bottom: 20px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 8px;
+    }
   }
 
   &__name-title {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 2.25rem;
   }
 
   &__name-descr {
     font-weight: 500;
-    line-height: 1.5rem;
     margin-bottom: 35px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
   }
 
   &__front {
     grid-area: front;
+
+    @media (min-width: $screen-md) {
+      width: 260px;
+      height: 367px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 320px;
+      height: 454px;
+    }
   }
 
   &__front-picture {
-    width: 300px;
-    height: 425px;
+
+    @media (min-width: $screen-md) {
+      width: 320px;
+      height: 454px;
+    }
   }
 
   &__front-img {
@@ -59,6 +102,16 @@
     grid-area: characters;
     display: flex;
     margin-bottom: 32px;
+
+    @media (min-width: $screen-md) {
+      padding-left: 18px;
+      margin-top: 33px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 32px;
+    }
   }
 
   &__characters-name-block {
@@ -92,6 +145,19 @@
 
   &__button {
     grid-area: button;
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 370px;
+      padding-left: 18px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 32px;
+    }
   }
 
   &__button-box {
@@ -106,12 +172,12 @@
     position: relative;
     margin-bottom: 20px;
 
-    &:after {
+    &:before {
       content: 'шт.';
       position: absolute;
       width: 25px;
       height: 9px;
-      right: -40px;
+      right: 40px;
       top: 0;
       bottom: 0;
       font-weight: 500;
@@ -143,6 +209,13 @@
     &:visited {
       background-color: $btn-color-visited;
     }
+
+    @media (min-width: $screen-md) {
+      width: 200px;
+      order: -1;
+      margin-left: 0;
+      margin-right: 42px;
+    }
   }
 
   &__button-text {
@@ -167,6 +240,12 @@
 
   &__about {
     grid-area: about;
+    margin-bottom: 50px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      margin-top: 41px;
+    }
   }
 
   &__about-title {
@@ -180,12 +259,49 @@
     margin-bottom: 35px;
   }
 
+  &__about-btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    font-family: $font-family;
+    color: $link-color;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 8px;
+      background-image: url(../img/showmore_arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: -20px;
+
+      &:hover {
+        fill: $link-color-hover;
+      }
+    }
+  }
+
   &__socials {
     grid-area: socials;
     width: 280px;
-    margin-bottom: 108px;
+    height: 20px;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      margin-top: 31px;
+    }
   }
 
   &__socials-item {
@@ -199,21 +315,46 @@
 
   &__socials-icon {
     margin-right: 10px;
+
+    &:hover {
+      fill: red;
+    }
   }
 
-  // &__pages {
-  //   grid-area: pages;
-  //     // display: block;
+  &__pages {
+    grid-area: pages;
+    display: none;
 
-  // }
+    @media (min-width: $screen-md) {
+      display: block;
+      width: 260px;
+      height: 120px;
+      border: 4px solid #e8e8e8;
+      padding: 17px 7px 14px 7px;
+      display: flex;
+      justify-content: space-between;
+    }
 
+    @media (min-width: $screen-lg) {
+      width: 160px;
+      height: 480px;
+      padding: 16px 16px 14px 16px;
+      flex-direction: column;
+    }
+  }
 
+  &__pages-img {
 
+    @media (min-width: $screen-md) {
+      width: 77px;
+      height: 90px;
+    }
 
-
-
-
-
+    @media (min-width: $screen-md) {
+      width: 120px;
+      height: 139px;
+    }
+  }
 
 
 }

@@ -80,14 +80,14 @@ $('.novice__block').owlCarousel ({
     }
 });
 
-$(window).width(function() {
-  if ($(window).width() > 767) {
-    $('.catalog__tabs').trigger('destroy.owl.carousel');
-  }
-  else {
-    return false;
-  }
-});
+// $(window).width(function() {
+//   if ($(window).width() > 767) {
+//     $('.catalog__tabs').trigger('destroy.owl.carousel');
+//   }
+//   else {
+//     return false;
+//   }
+// });
 
 
 
