@@ -46,6 +46,7 @@
 
   &__item {
     margin-bottom: 18px;
+    line-height: 0.9rem;
 
     &:last-child .main-nav__link {
         color: #1a1ff7;
@@ -77,6 +78,7 @@
     color: #000;
     font-weight: 700;
     font-size: 0.9rem;
+    line-height: 0.9rem;
 
     &:hover {
       color: $link-color-hover;

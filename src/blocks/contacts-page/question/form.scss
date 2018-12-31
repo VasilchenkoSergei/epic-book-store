@@ -142,9 +142,9 @@
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
-      width: 14px;
-      height: 14px;
-      top: 1px;
+      width: 13px;
+      height: 13px;
+      top: 0;
       right: 0;
       bottom: 0;
       left: -1px;
@@ -161,9 +161,25 @@
       position: relative;
       margin-right: 5px;
 
+      &:invalid .form__checkbox-error {
+        border: 4px solid $error;
+        content: 'Нужно согласиться с условиями, поставив галочку';
+        position: absolute;
+        top: -25px;
+        left: 0;
+        color: $error;
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+
       &:hover {
         border: 4px solid $icon-hover;
       }
     }
+  }
+
+  &__policy pre {
+    width: 380px;
+    display: inline-block;
   }
 }

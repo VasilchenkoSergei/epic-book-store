@@ -1,13 +1,14 @@
 .text-block2 {
-  // width: 580px;
+  display: block;
   text-align: center;
-  grid-area: block2;
+  grid-area: bestbook;
   position: relative;
   background-image: url(../img/text_block2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
+  padding-bottom: 20px;
 
   &:before {
     content: '';

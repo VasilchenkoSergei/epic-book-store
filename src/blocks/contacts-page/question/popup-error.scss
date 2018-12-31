@@ -1,0 +1,43 @@
+.popup-error {
+  display: none;
+  width: 360px;
+  height: 260px;
+  box-shadow: 0 12px 33px 5px #f4d4e4;
+  border-radius: 4px;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-left: 30px;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  &__title {
+    font-size: 1.88rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 33px;
+    color: #d90000;
+  }
+
+  &__text {
+    width: 290px;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  &__close {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: -20px;
+    top: -10px;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

@@ -60,8 +60,16 @@
                 <div class="question__block">
                     <h2 class="question__title">Есть вопросы?</h2>
                     <p class="question__subtitle">Напишите нам на почту. Отвечаем в течении дня</p>
-                    <form class="form" action="#"><label class="form__label" for="user-mail"><input class="form__mail form__input" id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required><span class="form__mail-error"></span></label><label for="user-message"><input class="form__message form__input" id="user-message" type="text" name="user-message" placeholder="Сообщение" required></label><label for="checkbox"><input class="form__checkbox" id="checkbox" type="checkbox" required><span class="form__checkbox--custom"></span><span>Я согласен(-на) с <a href="#">политикой конфиденциальности</a> и <a href="#">правилами обработки данных</a></span></label><button class="form__btn" type="submit">Отправить</button></form>
+                    <form class="form" action="#" novalidate><label class="form__label" for="user-mail"><input class="form__mail form__input" id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"><span class="form__mail-error"></span></label><label class="form__label" for="user-message"><input class="form__message form__input" id="user-message" type="text" name="user-message" placeholder="Сообщение"></label><label class="form__label" for="checkbox"><input class="form__checkbox" id="checkbox" type="checkbox" required><span class="form__checkbox--custom"></span><span>Я согласен(-на) с <a href="#">политикой конфиденциальности</a><br> и <a href="#">правилами обработки данных</a></span><span class="form__checkbox-error"></span></label><button class="form__btn" type="submit">Отправить</button></form>
                 </div>
+            </div>
+            <div class="popup-success">
+                <h3 class="popup-success__title">Ваш вопрос отправлен</h3>
+                <p class="popup-success__text">В ближайшие сутки мы обязательно ответим вам</p><button class="popup-success__close">&#10006;</button>
+            </div>
+            <div class="popup-error">
+                <h3 class="popup-error__title">Ошибка отправки</h3>
+                <p class="popup-error__text">К сожалению, ваш вопрос не удалось отправить — нет соединения с сервером. Пожалуйста, попробуйте позднее.</p><button class="popup-error__close">&#10006;</button>
             </div>
         </section>
         <section class="invitation">

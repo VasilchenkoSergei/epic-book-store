@@ -173,9 +173,16 @@
     position: relative;
     margin-bottom: 20px;
     margin-right: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
 
     &:hover {
       background-color: #ececec;
+    }
+
+    &:focus {
+      border: 2px solid #c6c6c6;
     }
   }
 
@@ -282,10 +289,6 @@
       bottom: 0;
       margin: auto;
       right: -20px;
-
-      &:hover {
-        fill: $link-color-hover;
-      }
     }
   }
 
@@ -318,12 +321,19 @@
     margin-right: 7px;
 
     &:hover {
-      fill: red;
+      fill: $icon-hover;
+    }
+
+    &:visited {
+      fill: $icon-visited;
     }
   }
 
   &__socials-number {
     color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: $font-family;
   }
 
   &__pages {
@@ -373,7 +383,7 @@
     }
 
     @media (min-width: $screen-md) {
-      width: 7px;
+      width: 77px;
       height: 90px;
     }
 

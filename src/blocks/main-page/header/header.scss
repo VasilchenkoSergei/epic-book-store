@@ -37,6 +37,13 @@
     }
   }
 
+  &__cart {
+
+    &:hover {
+      fill: $icon-hover;
+    }
+  }
+
   &__phone-wrap {
     display: none;
 
@@ -45,6 +52,13 @@
       cursor: pointer;
     }
   }
+
+    &__phone {
+
+      &:hover {
+        fill: $icon-hover;
+      }
+    }
 
   &__toggle {
     background-color: transparent;

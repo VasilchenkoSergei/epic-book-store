@@ -7,13 +7,21 @@
     width: 280px;
   }
 
+  &__item {
+    line-height: 0.9rem;
+  }
+
   &__link {
     color: #000;
     font-weight: 700;
     font-size: 0.9rem;
 
     &:hover {
-      color: #1a1ff7;
+      color: $link-color-hover;
+    }
+
+    &:visited {
+      color: $link-color-visited;
     }
   }
 

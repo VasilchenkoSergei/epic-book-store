@@ -1,5 +1,5 @@
 .text-block5 {
-  grid-area: block5;
+  grid-area: opinion;
   background-color: #fff;
   padding: 15px;
   padding-top: 20px;
@@ -12,6 +12,7 @@
 
   &__subtitle {
     line-height: 1.88rem;
+    margin-bottom: 18px;
   }
 
   &__btn {

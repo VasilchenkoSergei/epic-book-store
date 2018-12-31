@@ -11,9 +11,10 @@
       position: absolute;
       right: 100px;
       bottom: -80px;
+      outline: none;
 
-      & img:hover {
-        fill: red;
+      &:focus {
+        border: 2px solid #e8e8e8;
       }
 
       @media (min-width: $screen-md) {
