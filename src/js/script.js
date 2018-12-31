@@ -14,7 +14,7 @@ $(document).ready(function(){
     responsive : {
         0 : {
             items : 1,
-            navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
+            navText: ["<svg class='slider-left' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>", "<svg class='slider-right' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-right'></use></svg>"],
         }
     }
   });
@@ -45,10 +45,12 @@ $(document).ready(function(){
     responsive : {
         0 : {
             items : 1,
-            navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
+            navText: ["<svg class='description-page__slider-left' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>", "<svg class='description-page__slider-right' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-right'></use></svg>"],
         }
     }
   });
+
+
 
 // $(window).resize(function() {
 //   if ($(window).width() > 767) {
@@ -72,9 +74,9 @@ $(document).ready(function(){
   });
 
 
-  $('.form').submit(function (e) {
-    e.preventDefault();
-  });
+  // $('.form').submit(function (e) {
+  //   e.preventDefault();
+  // });
 
   // $('.form__btn').on('click', function(e) {
   //   e.preventDefault();

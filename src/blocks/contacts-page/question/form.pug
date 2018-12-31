@@ -1,9 +1,9 @@
-form.form(action='#' novalidate)
+form.form(action='#')
 	label(for="user-mail").form__label
-		input(id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})").form__mail.form__input
+		input(id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required).form__mail.form__input
 		span.form__mail-error
 	label(for="user-message").form__label
-		input(id="user-message" type="text" name="user-message" placeholder="Сообщение").form__message.form__input
+		input(id="user-message" type="text" name="user-message" placeholder="Сообщение" required).form__message.form__input
 	label(for="checkbox").form__label
 		input(id="checkbox" type="checkbox" required).form__checkbox
 		span.form__checkbox--custom
