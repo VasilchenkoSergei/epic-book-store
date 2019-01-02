@@ -9,7 +9,6 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.css": "stylelint",
     "*.scss": "stylelint --syntax=scss"
   },
   "author": "Vasilchenko Sergei",
