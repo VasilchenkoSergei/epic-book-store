@@ -17,7 +17,8 @@
       width: 1160px;
     }
 
-    &:before, &:after {
+    &:before,
+    &:after {
       content: '';
       position: absolute;
       width: 100px;
@@ -40,7 +41,7 @@
     }
   }
 
-  &__title  {
+  &__title {
     font-size: 1.88rem;
     margin-bottom: 21px;
   }

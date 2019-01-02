@@ -136,7 +136,7 @@
     display: none;
 
     &:checked + .form__checkbox--custom:before {
-      content: "";
+      content: '';
       display: block;
       background-image: url(../img/form_checkbox.png);
       background-repeat: no-repeat;

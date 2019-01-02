@@ -21,48 +21,10 @@
     width: 332px;
   }
 
-  // &__slider-right:hover {
-  //   fill: #ef529f;
-  // }
-
   &__slider {
     margin: 0 auto;
     width: 332px;
     height: 440px;
-
-    & .owl-nav {
-
-      & .owl-next {
-        position: absolute;
-
-        top: 0;
-        bottom: 0;
-        outline: none;
-
-        @media (min-width: $screen-md) {
-          right: -100px;
-        }
-
-        @media (min-width: $screen-lg) {
-          right: -150px;
-        }
-      }
-
-      & .owl-prev {
-        position: absolute;
-
-        top: 0;
-        bottom: 0;
-
-        @media (min-width: $screen-md) {
-          left: -100px;
-        }
-
-        @media (min-width: $screen-lg) {
-          left: -150px;
-        }
-      }
-    }
   }
 
   &__current {
@@ -85,5 +47,39 @@
     background-color: transparent;
     font-weight: 700;
     cursor: pointer;
+  }
+}
+
+.owl-nav {
+
+  & .owl-next {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    outline: none;
+
+    @media (min-width: $screen-md) {
+      right: -100px;
+    }
+
+    @media (min-width: $screen-lg) {
+      right: -150px;
+    }
+  }
+
+  & .owl-prev {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    @media (min-width: $screen-md) {
+      left: -100px;
+    }
+
+    @media (min-width: $screen-lg) {
+      left: -150px;
+    }
   }
 }

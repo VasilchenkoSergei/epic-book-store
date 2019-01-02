@@ -24,7 +24,8 @@
       padding-left: 22px;
     }
 
-    &:before, &:after {
+    &:before,
+    &:after {
       content: '';
       position: absolute;
       width: 150px;

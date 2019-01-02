@@ -32,6 +32,7 @@
   }
 
   &__cart-wrap {
+
     @media (min-width: $screen-lg) {
       margin-left: 50px;
     }
@@ -53,12 +54,12 @@
     }
   }
 
-    &__phone {
+  &__phone {
 
-      &:hover {
-        fill: $icon-hover;
-      }
+    &:hover {
+      fill: $icon-hover;
     }
+  }
 
   &__toggle {
     background-color: transparent;

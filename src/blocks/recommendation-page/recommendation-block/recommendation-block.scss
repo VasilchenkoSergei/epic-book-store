@@ -1,7 +1,6 @@
 .recommendation {
 
   &__title {
-    font-size: 3.13rem;
     margin-bottom: 46px;
     font-size: 1.5rem;
 
@@ -23,7 +22,7 @@
     margin-bottom: 137px;
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: auto;
-    grid-template-areas: "article" "bestbook" "oldbook" "collection" "opinion" "childrenbook" "presentbook";
+    grid-template-areas: 'article' 'bestbook' 'oldbook' 'collection' 'opinion' 'childrenbook' 'presentbook';
 
     @media (min-width: 360px) {
       width: 300px;
@@ -33,22 +32,22 @@
       width: 700px;
       grid-template-rows: auto auto auto auto auto auto;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "bestbook bestbook"
-                            "opinion childrenbook"
-                            "oldbook oldbook"
-                            "article presentbook"
-                            "collection presentbook"
-                            "collection presentbook";
+      grid-template-areas: 'bestbook bestbook'
+                            'opinion childrenbook'
+                            'oldbook oldbook'
+                            'article presentbook'
+                            'collection presentbook'
+                            'collection presentbook';
     }
 
     @media (min-width: $screen-lg) {
       width: 1200px;
       grid-template-rows: 1fr 1fr 1fr 170px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "article bestbook bestbook presentbook"
-                            "collection bestbook bestbook presentbook"
-                            "collection opinion childrenbook presentbook"
-                            "oldbook oldbook oldbook presentbook";
+      grid-template-areas: 'article bestbook bestbook presentbook'
+                            'collection bestbook bestbook presentbook'
+                            'collection opinion childrenbook presentbook'
+                            'oldbook oldbook oldbook presentbook';
     }
   }
 }
