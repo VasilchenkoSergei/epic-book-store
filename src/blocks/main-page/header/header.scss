@@ -2,7 +2,7 @@
   height: 50px;
   width: 100%;
   background-color: #fff;
-  padding-top: 18px;
+  padding-top: 16px;
   position: relative;
   margin-bottom: 35px;
 
@@ -15,10 +15,17 @@
     justify-content: space-between;
     position: relative;
     padding-right: 40px;
+    align-items: center;
 
     @media (min-width: $screen-md) {
       padding-right: 0;
     }
+  }
+
+  &__logo {
+    height: 15px;
+    width: 127px;
+    display: block;
   }
 
   &__timetable {
@@ -32,6 +39,8 @@
   }
 
   &__cart-wrap {
+    width: 20px;
+    height: 21px;
 
     @media (min-width: $screen-lg) {
       margin-left: 50px;
