@@ -5,52 +5,10 @@
     margin-bottom: 55px;
   }
 
-  & .owl-nav {
-
-    & .owl-next {
-      position: absolute;
-      right: 100px;
-      bottom: -80px;
-      outline: none;
-
-      &:focus {
-        border: 2px solid #e8e8e8;
-      }
-
-      @media (min-width: $screen-md) {
-        bottom: 0;
-        top: 0;
-        margin: auto;
-        right: -60px;
-      }
-
-      @media (min-width: $screen-lg) {
-        right: -20px;
-      }
-    }
-
-    & .owl-prev {
-      position: absolute;
-      left: 100px;
-      bottom: -80px;
-
-      @media (min-width: $screen-md) {
-        bottom: 0;
-        top: 0;
-        margin: auto;
-        left: -60px;
-      }
-
-      @media (min-width: $screen-lg) {
-        left: -20px;
-      }
-    }
-  }
-
   &__item {
     width: 100%;
+    padding-top: 85px;
     margin: 0 auto;
-    padding-top: 60px;
 
     @media (min-width: $screen-md) {
       width: 485px;
@@ -64,9 +22,8 @@
       width: 980px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 100px;
       align-items: center;
-      padding-top: 20px;
+      padding-top: 110px;
     }
   }
 
@@ -77,7 +34,6 @@
       display: block;
       width: 300px;
       height: 100%;
-      padding-bottom: 50px;
     }
   }
 
@@ -89,19 +45,20 @@
     padding-left: 20px;
     position: absolute;
     left: -20px;
-    top: -75px;
+    top: -100px;
 
     @media (min-width: $screen-md) {
       width: 320px;
       padding-left: 0;
       left: -5px;
-      top: -70px;
+      top: -80px;
     }
 
     @media (min-width: $screen-lg) {
       width: 320px;
       padding-left: 0;
       left: 20px;
+      top: -100px;
     }
   }
 
@@ -155,3 +112,46 @@
   }
 }
 
+.slider .owl-nav {
+  position: relative;
+
+  & .owl-next {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+
+    &:focus {
+      border: 2px solid #e8e8e8;
+    }
+
+    @media (min-width: $screen-md) {
+      top: -170px;
+      right: -80px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: -230px;
+      right: -20px;
+    }
+  }
+
+  & .owl-prev {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: $screen-md) {
+      top: -170px;
+      left: -80px;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: -230px;
+      left: -80px;
+    }
+  }
+}

@@ -2,12 +2,13 @@
   grid-area: opinion;
   background-color: #fff;
   padding: 15px;
-  padding-top: 20px;
+  padding-top: 22px;
   line-height: 1.88rem;
 
   &__title {
     margin-bottom: 15px;
     font-size: 1rem;
+    line-height: 1rem;
   }
 
   &__subtitle {
@@ -18,12 +19,23 @@
   &__btn {
     width: 100%;
     height: 50px;
+    border-radius: 2px;
     text-align: center;
     color: #fff;
     background-color: #000;
-    line-height: 3.13rem;
+    line-height: 50px;
     border: none;
     font-weight: 700;
     font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $btn-color-hover;
+    }
+
+    &:visited {
+      background-color: $btn-color-visited;
+    }
   }
 }

@@ -49,6 +49,10 @@
       top: 15px;
     }
 
+    @media (min-width: $screen-lg) {
+      right: 30px;
+    }
+
     &:hover {
       color: $link-color-hover;
     }
@@ -61,7 +65,6 @@
   &__block {
     display: flex;
     justify-content: space-between;
-    margin-right: -40px;
 
     & .product-card-mini {
       width: 260px;

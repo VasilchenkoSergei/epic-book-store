@@ -23,7 +23,7 @@ $(document).ready(function(){
     dots: false,
     items : 1,
     loop: true,
-    center: true,
+    center: false,
     autoWidth: true,
     responsive : {
         767 : {

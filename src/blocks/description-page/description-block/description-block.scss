@@ -1,11 +1,16 @@
 .description {
+  margin-bottom: 108px;
 
   &__inner {
     display: grid;
     margin: 0 auto;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 260px;
     grid-template-areas: 'name' 'front' 'characters' 'button' 'about' 'socials';
+
+    @media (min-width: $screen-xsm) {
+      grid-template-columns: auto;
+    }
 
     @media (min-width: $screen-md) {
       margin-bottom: 97px;
@@ -20,7 +25,6 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 97px;
       grid-template-rows: auto auto auto auto auto;
       grid-template-columns: 160px 320px 1fr;
       grid-gap: 22px;
@@ -293,7 +297,7 @@
 
   &__socials {
     grid-area: socials;
-    width: 280px;
+    width: 260px;
     height: 20px;
     display: flex;
     justify-content: space-between;
