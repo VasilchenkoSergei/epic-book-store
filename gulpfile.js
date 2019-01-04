@@ -25,6 +25,8 @@ const ghpages = require('gh-pages');
 const path = require('path');
 const cssnano = require('gulp-cssnano');
 const postcssInlineSvg = require('postcss-inline-svg');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('gulp-pngquant');
 
 function styles() {
   return src(`${dir.src}/scss/style.scss`)
@@ -52,6 +54,11 @@ exports.copyHTML = copyHTML;
 function copyImg() {
   return src(`${dir.src}/img/**/*.{jpg,jpeg,png,gif,svg,webp,json}`)
     .pipe(plumber())
+    // .pipe(imagemin({
+    //         interlaced: true,
+    //         progressive: true,
+    //         use: [pngquant()]
+    //     }))
     .pipe(dest(`${dir.build}/img`));
 }
 exports.copyImg = copyImg;

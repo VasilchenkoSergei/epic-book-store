@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-  $('.page-header__toggle').on('click', function() {
-    $('.main-nav').toggleClass('.active');
-    $('.main-nav').toggle();
-  });
-
   $('.slider').owlCarousel ({
     dots: false,
     loop: true,
