@@ -1,6 +1,6 @@
 .product-card-mini {
   margin: 0 auto;
-  width: 210px;
+  width: 220px;
   margin-bottom: 50px;
   position: relative;
 
@@ -10,7 +10,7 @@
 
   &__picture-wrap {
     display: block;
-    height: 313px;
+    height: 310px;
     margin-bottom: 33px;
 
     @media (min-width: $screen-md) {

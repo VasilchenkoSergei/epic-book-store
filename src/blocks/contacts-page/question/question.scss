@@ -9,9 +9,13 @@
   &__block {
     width: 100%;
     border: 8px solid $border-color;
-    padding: 60px 20px 80px 20px;
+    padding: 55px 20px 90px 20px;
     margin: 0 auto;
     position: relative;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 65px;
+    }
 
     @media (min-width: $screen-lg) {
       width: 1160px;
@@ -43,13 +47,21 @@
 
   &__title {
     font-size: 1.88rem;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
   }
 
   &__subtitle {
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 25px;
+    }
   }
 }
 

@@ -28,9 +28,6 @@
       padding-left: 0;
       padding-top: 0;
       z-index: 0;
-    }
-
-    @media (min-width: $screen-md) {
       display: flex;
       justify-content: space-between;
     }
@@ -40,13 +37,16 @@
     }
 
     @media (min-width: $screen-lg) {
-      margin-left: 450px;
+      margin-left: 470px;
     }
   }
 
   &__item {
     margin-bottom: 18px;
-    line-height: 0.9rem;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
 
     &:last-child .main-nav__link {
       color: #1a1ff7;

@@ -11,6 +11,7 @@
 
     @media (min-width: $screen-lg) {
       text-align: left;
+      margin-top: 60px;
     }
   }
 
@@ -42,8 +43,8 @@
 
     @media (min-width: $screen-lg) {
       width: 1200px;
-      grid-template-rows: 1fr 1fr 1fr 170px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 170px 175px 175px 170px;
+      grid-template-columns: 300px 1fr 1fr 1fr;
       grid-template-areas: 'article bestbook bestbook presentbook'
                             'collection bestbook bestbook presentbook'
                             'collection opinion childrenbook presentbook'

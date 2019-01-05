@@ -1,5 +1,9 @@
 .description {
-  margin-bottom: 108px;
+  margin-bottom: 98px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 90px;
+  }
 
   &__inner {
     display: grid;
@@ -13,7 +17,6 @@
     }
 
     @media (min-width: $screen-md) {
-      margin-bottom: 97px;
       grid-template-rows: auto auto auto auto auto;
       grid-template-columns: 260px 1fr;
       grid-gap: 22px;
@@ -28,6 +31,7 @@
       grid-template-rows: auto auto auto auto auto;
       grid-template-columns: 160px 320px 1fr;
       grid-gap: 22px;
+      grid-column-gap: 55px;
       grid-template-areas: 'pages front name'
                             'pages front characters'
                             'pages front button'
@@ -44,7 +48,7 @@
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 32px;
+      padding-left: 0;
     }
   }
 
@@ -52,6 +56,10 @@
     font-size: 0.88rem;
     font-weight: 700;
     margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 16px;
+    }
 
     @media (min-width: $screen-lg) {
       margin-bottom: 8px;
@@ -63,11 +71,20 @@
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 2.25rem;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 16px;
+    }
   }
 
   &__name-descr {
     font-weight: 500;
     margin-bottom: 35px;
+    line-height: 1.5rem;
 
     @media (min-width: $screen-md) {
       margin-bottom: 0;
@@ -109,12 +126,12 @@
 
     @media (min-width: $screen-md) {
       padding-left: 18px;
-      margin-top: 33px;
       margin-bottom: 0;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 32px;
+      padding-left: 0;
+      padding-top: 10px;
     }
   }
 
@@ -122,6 +139,10 @@
     width: 160px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      width: 130px;
+    }
   }
 
   &__characters-value-block {
@@ -133,34 +154,55 @@
     font-size: 0.88rem;
     color: #ababab;
     font-weight: 500;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 28px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__characters-value {
     font-size: 0.88rem;
     font-weight: 500;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 28px;
+    }
 
     &:last-child {
       font-weight: 700;
       font-size: 1rem;
+      margin-bottom: 0;
     }
   }
 
   &__button {
     grid-area: button;
-    margin-bottom: 40px;
 
     @media (min-width: $screen-md) {
       display: flex;
       flex-wrap: wrap;
       width: 390px;
       padding-left: 18px;
-      margin-bottom: 0;
+      margin-bottom: 40px;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 32px;
+      padding-left: 0;
+      padding-top: 52px;
       width: 405px;
     }
   }
@@ -207,6 +249,7 @@
     margin: 0 auto;
     cursor: pointer;
     margin-bottom: 20px;
+    font-weight: 700;
     transition: all 0.5s;
 
     &:hover {
@@ -223,6 +266,11 @@
       margin-left: 0;
       margin-right: 42px;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 260px;
+      margin-right: 20px;
+    }
   }
 
   &__button-text {
@@ -230,7 +278,7 @@
     font-style: italic;
     padding-left: 27px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     &:before {
       content: '';
@@ -251,19 +299,30 @@
 
     @media (min-width: $screen-md) {
       margin-bottom: 0;
-      margin-top: 41px;
     }
   }
 
   &__about-title {
     font-size: 1.5rem;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 16px;
+    }
   }
 
   &__about-descr {
     font-weight: 500;
     line-height: 1.5rem;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 655px;
+    }
   }
 
   &__about-btn {

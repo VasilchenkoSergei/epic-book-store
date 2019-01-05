@@ -1,5 +1,10 @@
 .address {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-lg) {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
 
   &__inner {
 
@@ -10,10 +15,10 @@
 
   &__title {
     font-size: 3.13rem;
-    margin-bottom: 46px;
+    margin-bottom: 35px;
 
     @media (min-width: $screen-md) {
-      margin-bottom: 56px;
+      margin-bottom: 48px;
     }
   }
 
@@ -25,18 +30,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 46px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 870px;
+      width: 850px;
     }
   }
 
   &__item {
     font-weight: 500;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     &:before {
       content: '';
