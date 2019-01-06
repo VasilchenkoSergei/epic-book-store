@@ -43,42 +43,33 @@
         </div>
     </header>
     <main>
-        <section class="recommendation">
-            <div class="recommendation__inner inner">
-                <h1 class="recommendation__title">Наши рекомендации</h1>
-                <div class="recommendation__block">
-                    <div class="text-block1 text-block">
-                        <h3 class="text-block1__title">Новая статья в блоге</h3>
-                        <p class="text-block1__subtitle">Посмотрите, как чтение книг меняет восприятие человека</p><a class="text-block1__link" href="#">Читать статью</a>
-                    </div><a class="text-block2 text-block" href="#">
-                        <h3 class="text-block2__title">Книга осени!</h3>
-                        <p class="text-block2__subtitle">Проголосуй за лучшую книгу осени</p>
-                    </a>
-                    <div class="text-block3 text-block">
-                        <h3 class="text-block3__title">Книга в подарок!</h3>
-                        <p class="text-block3__subtitle">При вашем новом заказе мы подарим вам книгу</p>
-                        <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="#">
-                                <picture class="product-card-mini__picture">
-                                    <source media="(min-width: 1920px)" srcset="img/books/putevoditel-po-lzhi_2x.png 2x"><img class="product-card-mini__img" src="img/books/putevoditel-po-lzhi.png" alt="book-putevoditel-po-lzhi" width="260" height="370"></picture>
-                            </a><a class="product-card-mini__title-wrap" href="">
-                                <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
-                            </a>
-                            <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-                        </article>
-                    </div><a class="text-block4 text-block" href="#">
-                        <h3 class="text-block4__title">Наши подборки ваших лучших фотографий у нас</h3>
-                    </a>
-                    <div class="text-block5 text-block">
-                        <h3 class="text-block5__title">Нам важно ваше мнение!</h3>
-                        <p class="text-block5__subtitle">Ставьте пальцы вверх, мы хотим знать ваше мнение</p><button class="text-block5__btn">Проголосовать</button>
-                    </div><a class="text-block6 text-block" href="#">
-                        <h3 class="text-block6__title">Книги для детей</h3>
-                        <p class="text-block6__subtitle">У нас появился новый раздел, в котором мы подбираем книги для юных читателей</p>
-                    </a><a class="text-block7 text-block" href="#">
-                        <h3 class="text-block7__title">У вас есть старые книги?</h3>
-                        <p class="text-block7__subtitle">Приносите их нам и обменяйте на новые</p>
-                    </a>
+        <section class="address">
+            <div class="address__inner inner">
+                <h1 class="address__title">Контакты</h1>
+                <div class="address__block">
+                    <ul class="address__list">
+                        <li class="address__item">Набережная реки Фонтанки, 202</li>
+                        <li class="address__item">с 9:00 до 19:00 ежедневно</li>
+                        <li class="address__item">+7 (911) 123 45 67</li>
+                    </ul>
+                </div><iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.593648502349!2d30.31331721740574!3d59.93888470724551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696311064b4ac29%3A0xc1f4a1bc8e98bd91!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!5e0!3m2!1sru!2sru!4v1543520154738" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="question">
+            <div class="question__inner">
+                <div class="question__block">
+                    <h2 class="question__title">Есть вопросы?</h2>
+                    <p class="question__subtitle">Напишите нам на почту. Отвечаем в течении дня</p>
+                    <form class="form" action="#" novalidate><label class="form__label" for="user-mail"><input class="form__mail form__input" id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required><span class="form__mail-error"></span></label><label class="form__label" for="user-message"><input class="form__message form__input" id="user-message" type="text" name="user-message" placeholder="Сообщение" required></label><label class="form__label" for="checkbox"><input class="form__checkbox" id="checkbox" type="checkbox" required><span class="form__checkbox--custom"></span><span>Я согласен(-на) с <a href="#">политикой конфиденциальности</a><br> и <a href="#">правилами обработки данных</a></span><span class="form__checkbox-error"></span></label><input class="form__btn" type="submit" value="Отправить"></form>
                 </div>
+            </div>
+            <div class="popup-success">
+                <h3 class="popup-success__title">Ваш вопрос отправлен</h3>
+                <p class="popup-success__text">В ближайшие сутки мы обязательно ответим вам</p><button class="popup-success__close">&#10006;</button>
+            </div>
+            <div class="popup-error">
+                <h3 class="popup-error__title">Ошибка отправки</h3>
+                <p class="popup-error__text">К сожалению, ваш вопрос не удалось отправить — нет соединения с сервером. Пожалуйста, попробуйте позднее.</p><button class="popup-error__close">&#10006;</button>
             </div>
         </section>
         <section class="invitation">

@@ -2,35 +2,32 @@
 <html class="no-js  page" lang="ru">
 
 <head>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <meta charset="UTF-8">
     <meta name="description" content="Книжный магазин">
     <meta name="keywords" content="книги, books, чтение">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Books">
     <meta property="og:description" content="Книжный магазин">
-    <meta property="og:image" content="../img/icons/favicon/ms-icon-150x150.png">
+    <meta property="og:image" content="../img/favicon/apple-icon-180x180.png">
     <meta name="robots" content="all">
     <title>Book-store</title>
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>document.documentElement.className = ocument.documentElement.className.replace('no-js', 'js');</script>
-    <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/favicon/manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
 </head>
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
-                <div class="burgerline burgerline-1 no-animation"></div>
-                <div class="burgerline burgerline-2 no-animation"></div>
-                <div class="burgerline burgerline-3 no-animation"></div>
-            </button>
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store" width="127" height="14"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
+            <div class="page-header__toggle"><span class="page-header__burgerline burgerline-1 no-animation"></span><span class="page-header__burgerline burgerline-2 no-animation"></span><span class="page-header__burgerline burgerline-3 no-animation"></span></div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
@@ -38,71 +35,121 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
                 </ul>
-            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="20" height="20"></object></a><a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="20" height="20"></object></a>
+            </nav><a class="page-header__cart-wrap" href="#"><svg class="page-header__cart" width="20" height="21">
+                    <use xlink:href="img/sprite.svg#icon_cart"></use>
+                </svg></a><a class="page-header__phone-wrap" href="tel:+79995554433"><svg class="page-header__phone" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                </svg></a>
         </div>
     </header>
     <main>
         <section class="description">
             <div class="description__inner inner">
-                <div class="description__block1">
-                    <p class="description__block1-author">Эдди Юн</p>
-                    <h2 class="description__block1-title">Супер&shy;потребители</h2>
-                    <p class="description__block1-descr">Кто это и почему они так важны для вашего бизнеса</p>
+                <div class="description__name">
+                    <p class="description__name-author">Эдди Юн</p>
+                    <h2 class="description__name-title">Супер&shy;потребители</h2>
+                    <p class="description__name-descr">Кто это и почему они так важны для вашего бизнеса</p>
                 </div>
-                <div class="description__block2">
-                    <picture class="description__block2-picture"><img class="description__block2-img" src="img/book-superpotrebiteli.jpg"></picture>
+                <div class="description__front">
+                    <picture class="description__front-picture">
+                        <source media="(min-width: 1650px)" srcset="img/books/superpotrebiteli_2x.png 2x"><img class="description__front-img" src="img/books/superpotrebiteli.png" alt="книга суперпотребители" width="259" height="367"></picture>
                 </div>
-                <div class="description__block3">
-                    <div class="description__block3-details">
-                        <div class="description__block3-name">Артикул</div>
-                        <div class="description__block3-value">10907063</div>
-                    </div>
-                    <div class="description__block3-details">
-                        <div class="description__block3-name">В наличии</div>
-                        <div class="description__block3-value">5 шт.</div>
-                    </div>
-                    <div class="description__block3-details">
-                        <div class="description__block3-name">Издательство</div>
-                        <div class="description__block3-value">Мосгорсвет</div>
-                    </div>
-                    <div class="description__block3-details">
-                        <div class="description__block3-name">Цена</div>
-                        <div class="description__block3-value">800 &#8381;</div>
-                    </div>
+                <div class="description__characters">
+                    <div class="description__characters-name-block"><span class="description__characters-name">Артикул</span><span class="description__characters-name">В наличии</span><span class="description__characters-name">Издательство</span><span class="description__characters-name">Цена</span></div>
+                    <div class="description__characters-value-block"><span class="description__characters-value">10907063</span><span class="description__characters-value">5 шт.</span><span class="description__characters-value">Мосгорсвет</span><span class="description__characters-value">800 &#8381;</span></div>
                 </div>
-                <div class="description__block4">
-                    <div class="description__block4-number">
-                        <div class="description__block4-box"></div><span>шт.</span>
-                    </div><button class="description__block4-btn">Добавить в корзину</button>
-                    <p class="description__block4-text"><span>20</span> людям понравилась эта книга</p>
+                <div class="description__button"><input class="description__button-box" type="text" value="1"><span class="description__button-span">шт.</span><button class="description__button-btn">Добавить в корзину</button>
+                    <p class="description__button-text"><span>20</span> людям понравилась эта книга</p>
                 </div>
-                <div class="description__block5">
-                    <h3 class="description__block5-title">Короткое описание</h3>
-                    <p class="description__block5-descr"> В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p>
+                <div class="description__about">
+                    <h3 class="description__about-title">Короткое описание</h3>
+                    <p class="description__about-descr"> В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+                    <p class="description__about-descr">Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты c копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.</p><button class="description__about-btn">Показать полностью</button>
                 </div>
-                <div class="description__block6"><span class="description__block6-facebook">20</span><span class="description__block6-vkontakte">30</span><span class="description__block6-like">50</span><span class="description__block6-dislike">10</span></div>
-                <div class="description__block7">
-                    <picture class="description__block7-picture"><img class="description__block7-img" src=""></picture>
-                    <picture class="description__block7-picture"><img class="description__block7-img" src=""></picture>
-                    <picture class="description__block7-picture"><img class="description__block7-img" src=""></picture>
+                <div class="description__socials"><a class="description__socials-item description__socials-facebook" href="#"><svg class="description__socials-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon_facebook"></use>
+                        </svg><span class="description__socials-number">20</span></a><a class="description__socials-item description__socials-vkontakte" href="#"><svg class="description__socials-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+                        </svg><span class="description__socials-number">30</span></a><button class="description__socials-item description__socials-like"><svg class="description__socials-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon_like"></use>
+                        </svg><span class="description__socials-number">50</span></button><button class="description__socials-item description__socials-dislike"><svg class="description__socials-icon" width="20" height="20">
+                            <use xlink:href="img/sprite.svg#icon_like"></use>
+                        </svg><span class="description__socials-number">10</span></button></div>
+                <div class="description__pages">
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen1.jpg" alt="Страница 1" width="120" height="139"></picture>
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen2.jpg" alt="Страница 2" width="120" height="139"></picture>
+                    <picture class="description__pages-picture"><img class="description__pages-img" src="img/book_screen3.jpg" alt="Страница 3" width="120" height="139"></picture>
                 </div>
+            </div>
+        </section>
+        <div class="description-page">
+            <div class="description-page__slider owl-carousel owl-theme">
+                <picture class="description-page__current">
+                    <source media="(min-width: 1650px)" type="image/webp" srcset="img/book_screen1.webp"><img class="description-page__img" src="img/book_screen.png" alt="Страница книги" width="332" height="440"></picture>
+                <picture class="description-page__current">
+                    <source media="(min-width: 1650px)" type="image/webp" srcset="img/book_screen2.webp"><img class="description-page__img" src="img/book_screen.png" alt="Страница книги" width="332" height="440"></picture>
+                <picture class="description-page__current">
+                    <source media="(min-width: 1650px)" type="image/webp" srcset="img/book_screen3.webp"><img class="description-page__img" src="img/book_screen.png" alt="Страница книги" width="332" height="440"></picture>
+            </div><button class="description-page__close">&#10006;</button>
+        </div>
+        <section class="novice">
+            <div class="novice__inner inner">
+                <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
+                <div class="novice__block owl-carousel owl-theme">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/lateralnaya-logika.jpg" alt="lateralnaya-logika" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Латеральная логика</h3>
+                        </a>
+                        <p class="product-card-mini__text">Головоломный путь к нестандартному мышлению</p><span class="product-card-mini__price">500 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/putevoditel-po-lzhi.jpg" alt="putevoditel-po-lzhi" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
+                        </a>
+                        <p class="product-card-mini__text">Критическое мышление в эпоху постправды</p><span class="product-card-mini__price">630 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/dao-fiziki.jpg" alt="dao-fiziki" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Дао физики</h3>
+                        </a>
+                        <p class="product-card-mini__text">Исследование параллелей между современной физикой и восточной философией</p><span class="product-card-mini__price">560 &#8381;</span>
+                    </article>
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/ne-ochevidno.jpg" alt="ne-ochevidno" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
+                            <h3 class="product-card-mini__title">Не очевидно</h3>
+                        </a>
+                        <p class="product-card-mini__text">Как выявлять тренды раньше других</p><span class="product-card-mini__price">365 &#8381;</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="invitation">
+            <div class="invitation__inner"><svg class="invitation__icon" width="100" height="20">
+                    <use xlink:href="img/sprite.svg#icon_wave"></use>
+                </svg>
+                <h2 class="invitation__title">Мы открыли для вас уютную библиотеку</h2>
+                <p class="invitation__subtitle">Приходите к нам по адресу Никитинская 10, каждый день с 12:00 до 18:00</p>
             </div>
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner inner"><a class="logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="#">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
-            <nav class="footer-nav">
+        <div class="page-footer__inner inner"><a class="logo page-footer__logo" href="index.html"><img src="img/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="contacts.html">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
+            <div class="footer-nav">
                 <ul class="footer-nav__list">
                     <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">книги</a></li>
                     <li class="footer-nav__item"><a class="footer-nav__link" href="recommendation.html">рекомендации</a></li>
                     <li class="footer-nav__item"><a class="footer-nav__link" href="contacts.html">контакты</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
 </body>
 
 </html>

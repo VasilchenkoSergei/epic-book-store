@@ -2,35 +2,35 @@
 <html class="no-js  page" lang="ru">
 
 <head>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <meta charset="UTF-8">
     <meta name="description" content="Книжный магазин">
     <meta name="keywords" content="книги, books, чтение">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Books">
     <meta property="og:description" content="Книжный магазин">
-    <meta property="og:image" content="../img/icons/favicon/ms-icon-150x150.png">
+    <meta property="og:image" content="../img/favicon/apple-icon-180x180.png">
     <meta name="robots" content="all">
     <title>Book-store</title>
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script>document.documentElement.className = ocument.documentElement.className.replace('no-js', 'js');</script>
-    <link rel="shortcut icon" href="img/icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/icons/favicon/manifest.json">
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
 </head>
 
 <body>
     <header class="page-header">
-        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><span class="page-header__timetable">с 9:00 до 19:00</span><button class="page-header__toggle">
-                <div class="burgerline burgerline-1 no-animation"></div>
-                <div class="burgerline burgerline-2 no-animation"></div>
-                <div class="burgerline burgerline-3 no-animation"></div>
-            </button>
+        <div class="page-header__inner inner"><a class="logo page-header__logo" href="index.html"><img src="img/logo_icon.png" alt="book store" width="127" height="14"></a><span class="page-header__timetable">с 9:00 до 19:00</span>
+            <div class="page-header__toggle"><span class="page-header__burgerline burgerline-1 no-animation"></span><span class="page-header__burgerline burgerline-2 no-animation"></span><span class="page-header__burgerline burgerline-3 no-animation"></span></div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="index.html">книги</a></li>
@@ -38,7 +38,11 @@
                     <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="tel:+78005008020">8 800 500-80-20</a></li>
                 </ul>
-            </nav><a class="page-header__cart-wrap" href="#"><object class="page-header__cart" type="image/svg+xml" data="cart.svg" width="20" height="20"></object></a><a class="page-header__phone-wrap" href="tel:+79995554433"><object class="page-header__phone" type="image/svg+xml" data="phone.svg" width="20" height="20"></object></a>
+            </nav><a class="page-header__cart-wrap" href="#"><svg class="page-header__cart" width="20" height="21">
+                    <use xlink:href="img/sprite.svg#icon_cart"></use>
+                </svg></a><a class="page-header__phone-wrap" href="tel:+79995554433"><svg class="page-header__phone" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon_phone"></use>
+                </svg></a>
         </div>
     </header>
     <main>
@@ -46,57 +50,58 @@
             <div class="promo__inner">
                 <div class="slider owl-carousel owl-theme">
                     <article class="slider__item">
-                        <div class="slider__item-block slider-textblock">
-                            <div class="slider-textblock__border">
-                                <p class="slider-textblock__descr">Новое поступление книги "Симпсоны и их математические секреты"</p>
-                                <h2 class="slider-textblock__title">Для поклонников сериала "Симпсоны" и всех, кому интересна математика</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
+                        <div class="slider__item-block">
+                            <div class="slider__item-border">
+                                <p class="slider__item-descr">Новое поступление книги "Симпсоны и их математические секреты"</p>
+                                <h2 class="slider__item-title">Для поклонников сериала "Симпсоны" и всех, кому интересна математика</h2><a class="slider__item-showmore" href="description.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" width="300" height="420" alt="Книга Симпсоны"></picture>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1920px)" srcset="img/simpsony-i-ikh-matematicheskie-sekrety_2x.png 2x"><img class="slider__item-img" src="img/simpsony-i-ikh-matematicheskie-sekrety.png" width="300" height="420" alt="Книга Симпсоны"></picture>
                     </article>
                     <article class="slider__item">
-                        <div class="slider__item-block slider-textblock">
-                            <div class="slider-textblock__border">
-                                <p class="slider-textblock__descr">Новое поступление книги "45 татуировок менеджера"</p>
-                                <h2 class="slider-textblock__title">Книга про правила российского руководителя</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
+                        <div class="slider__item-block">
+                            <div class="slider__item-border">
+                                <p class="slider__item-descr">Новое поступление книги "45 татуировок менеджера"</p>
+                                <h2 class="slider__item-title">Книга про правила российского руководителя</h2><a class="slider__item-showmore" href="description.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/45-tatuirovok-prodavana.jpg" width="300" height="420" alt="45 татуировок менеджера"></picture>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1920px)" srcset="img/45-tatuirovok-prodavana_2x.png 2x"><img class="slider__item-img" src="img/45-tatuirovok-prodavana.png" width="300" height="420" alt="45 татуировок менеджера"></picture>
                     </article>
                     <article class="slider__item">
-                        <div class="slider__item-block slider-textblock">
-                            <div class="slider-textblock__border">
-                                <p class="slider-textblock__descr">Узнать как обучить персонал с нвоой книгой "Пятая дисциплина"</p>
-                                <h2 class="slider-textblock__title">Искусство и практика обучайщейся организации</h2><a class="slider-textblock__showmore" href="inner.html">Хочу узнать о книге больше</a>
+                        <div class="slider__item-block">
+                            <div class="slider__item-border">
+                                <p class="slider__item-descr">Узнать как обучить персонал с нвоой книгой "Пятая дисциплина"</p>
+                                <h2 class="slider__item-title">Искусство и практика обучайщейся организации</h2><a class="slider__item-showmore" href="description.html">Хочу узнать о книге больше</a>
                             </div>
                         </div>
-                        <picture class="slider__item-picture"><img class="slider__item-img" src="img/pyataya-distsiplina.jpg" width="300" height="420" alt="Пятая дисциплина"></picture><button class="slider__item-btn slider__item-btn--left"></button><button class="slider__item-btn slider__item-btn--right"></button>
+                        <picture class="slider__item-picture">
+                            <source media="(min-width: 1280px)" srcset="img/pyataya-distsiplina_2x.png 2x"><img class="slider__item-img" src="img/pyataya-distsiplina.png" width="300" height="420" alt="Пятая дисциплина"></picture>
                     </article>
                 </div>
             </div>
         </div>
         <section class="catalog">
             <div class="catalog__inner inner">
-                <ul class="catalog__tabs">
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="all">Все</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="marketing">Маркетинг</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="science">Научпоп</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="business">Бизнес</a></li>
-                    <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="creativity">Творчество</a></li>
-                </ul>
+                <div class="catalog__wrap">
+                    <ul class="catalog__tabs j-catalog__tabs">
+                        <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="all">Все</a></li>
+                        <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="marketing">Маркетинг</a></li>
+                        <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="science">Научпоп</a></li>
+                        <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="business">Бизнес</a></li>
+                        <li class="catalog__tabs-item"><a class="catalog__tabs-link" href="#" data-type="creativity">Творчество</a></li>
+                    </ul>
+                </div>
                 <div class="catalog__block"></div>
                 <div class="catalog__pagination pagination">
                     <ul class="pagination__list">
-                        <li class="pagination__item"><a class="pagination__link" href="">1</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">4</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">5</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">6</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">7</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">8</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">9</a></li>
-                        <li class="pagination__item"><a class="pagination__link" href="">10</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,10 +111,26 @@
                 <div class="offer__border">
                     <h2 class="offer__title">Доставим в любое место</h2><span class="offer__subtitle">// ну почти в любое</span>
                     <div class="offer__list">
-                        <p class="offer__item">Покупаете книги на сайте в любом формате - бумажные, электронные или аудио</p>
-                        <p class="offer__item">Мы подарим вам "Набор читателя" и добавим в посылку</p>
-                        <p class="offer__item">Бесплатно доставляем заказы от 3000 по всей России</p>
-                        <p class="offer__item">Доставка более чем в 300 городов России, по Москве и Санкт-Петербургу - бесплатно</p>
+                        <div class="offer__item"><svg class="offer__icon" width="51" height="40">
+                                <use xlink:href="img/sprite.svg#icon_book"></use>
+                            </svg>
+                            <p class="offer__text">Покупаете книги на сайте в любом формате - бумажные, электронные или аудио</p>
+                        </div>
+                        <div class="offer__item"><svg class="offer__icon" width="69" height="40">
+                                <use xlink:href="img/sprite.svg#icon_box"></use>
+                            </svg>
+                            <p class="offer__text">Мы подарим вам "Набор читателя" и добавим в посылку</p>
+                        </div>
+                        <div class="offer__item"><svg class="offer__icon" width="58" height="42">
+                                <use xlink:href="img/sprite.svg#icon_delivery"></use>
+                            </svg>
+                            <p class="offer__text">Бесплатно доставляем заказы от 3000 по всей России</p>
+                        </div>
+                        <div class="offer__item"><svg class="offer__icon" width="56" height="42">
+                                <use xlink:href="img/sprite.svg#icon_map"></use>
+                            </svg>
+                            <p class="offer__text">Доставка более чем в 300 городов России, по Москве и Санкт-Петербургу - бесплатно</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,31 +138,31 @@
         <section class="novice">
             <div class="novice__inner inner">
                 <h2 class="novice__title">Наши новинки</h2><a class="novice__link" href="#">Все новинки</a>
-                <div class="novice__block">
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika" width="260" height="370"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="inner.html">
+                <div class="novice__block owl-carousel owl-theme">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/lateralnaya-logika.jpg" alt="lateralnaya-logika" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
                             <h3 class="product-card-mini__title">Латеральная логика</h3>
                         </a>
                         <p class="product-card-mini__text">Головоломный путь к нестандартному мышлению</p><span class="product-card-mini__price">500 &#8381;</span>
                     </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi" width="260" height="370"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="inner.html">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/putevoditel-po-lzhi.jpg" alt="putevoditel-po-lzhi" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
                             <h3 class="product-card-mini__title">Путеводитель по лжи</h3>
                         </a>
                         <p class="product-card-mini__text">Критическое мышление в эпоху постправды</p><span class="product-card-mini__price">630 &#8381;</span>
                     </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki" width="260" height="370"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="inner.html">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/dao-fiziki.jpg" alt="dao-fiziki" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
                             <h3 class="product-card-mini__title">Дао физики</h3>
                         </a>
                         <p class="product-card-mini__text">Исследование параллелей между современной физикой и восточной философией</p><span class="product-card-mini__price">560 &#8381;</span>
                     </article>
-                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="inner.html">
-                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno" width="260" height="370"></picture>
-                        </a><a class="product-card-mini__title-wrap" href="inner.html">
+                    <article class="product-card-mini"><a class="product-card-mini__picture-wrap" href="description.html">
+                            <picture class="product-card-mini__picture"><img class="product-card-mini__img" src="img/ne-ochevidno.jpg" alt="ne-ochevidno" width="260" height="370"></picture>
+                        </a><a class="product-card-mini__title-wrap" href="description.html">
                             <h3 class="product-card-mini__title">Не очевидно</h3>
                         </a>
                         <p class="product-card-mini__text">Как выявлять тренды раньше других</p><span class="product-card-mini__price">365 &#8381;</span>
@@ -151,19 +172,19 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__inner inner"><a class="logo" href="index.html"><img src="img/icons/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="#">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
-            <nav class="footer-nav">
+        <div class="page-footer__inner inner"><a class="logo page-footer__logo" href="index.html"><img src="img/logo_icon.png" alt="book store"></a><a class="page-footer__contacts" href="contacts.html">контакты</a><span class="page-footer__timetable">с 9:00 до 19:00</span>
+            <div class="footer-nav">
                 <ul class="footer-nav__list">
                     <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">книги</a></li>
                     <li class="footer-nav__item"><a class="footer-nav__link" href="recommendation.html">рекомендации</a></li>
                     <li class="footer-nav__item"><a class="footer-nav__link" href="contacts.html">контакты</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.min.js" type="module"></script>
 </body>
 
 </html>
