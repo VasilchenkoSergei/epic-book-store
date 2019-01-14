@@ -14,7 +14,7 @@ $('.page-header__toggle').on('click', function() {
     responsive : {
         0 : {
             items : 1,
-            navText: ["<svg class='slider-left' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>", "<svg class='slider-right' width='40' height='40'><use xlink:href='img/sprite.svg#arrow-right'></use></svg>"],
+            navText: ["<svg class='slider-left' width='9' height='16'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>", "<svg class='slider-right' width='9' height='16'><use xlink:href='img/sprite.svg#arrow-left'></use></svg>"],
         }
     }
   });
@@ -61,9 +61,15 @@ $(window).resize(function() {
   }
 });
 
+//Active catalog item
 
+$('.catalog__tabs-link').click(function(event){
+    event.preventDefault();
+    $('.catalog__tabs-link').removeClass('catalog__tabs-link--active')
+    $(this).addClass('catalog__tabs-link--active');
+  });
 
-//SHOW PAGE
+//Show pages
 
   $('.description__pages-picture').on('click', function() {
     $('.description-page').css('display','block');
@@ -73,25 +79,58 @@ $(window).resize(function() {
     $('.description-page').fadeOut(500);
   });
 
+//Form validation
 
-  // $('.form').submit(function (e) {
-  //   e.preventDefault();
-  // });
+  $('.form__btn').on('click', function(e) {
+    e.preventDefault();
+      $('.popup-success').addClass('display','block');
 
-  // $('.form__btn').on('click', function(e) {
-  //   e.preventDefault();
+  });
 
-  //     $('.popup-success').css('display','block');
-
-  // });
-
-  // $('.popup-success__close').on('click', function() {
-  //   $('.popup-success').fadeOut(500);
-  // });
+  $('.popup-success__close').on('click', function() {
+    $('.popup-success').fadeOut(500);
+  });
 
   // $('.popup-error__close').on('click', function() {
   //   $('.popup-error').fadeOut(500);
   // });
+
+
+// $('.form__btn').on('click', function(e) {
+//     e.preventDefault();
+//     var email = $('#user-mail').val();
+
+//     $(".error").remove();
+
+//     if (email.length< 1) {
+//       $('#user-mail').after('<span class="error">This field is required</span>');
+//     } else {
+//       var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/;
+//       var validEmail = regEx.test(email);
+//       if (!validEmail) {
+//         $('#user-mail').after('<span class="error">Enter a valid email</span>');
+//       }
+//     }
+//   });
+
+
+// $('#form').validate({
+//   rules: {
+//     email: {
+//       required: true
+//     }
+//   },
+//   messages: {
+//     email: {
+//       required: "Поле 'Email' обязательно к заполнению",
+//       email: "Необходим формат адреса email"
+//     }
+//   }
+// });
+
+
+
+
 
 });
 
@@ -111,7 +150,7 @@ sendRequest(createDataAjax());
 
 //Вешаем слушатель на табы
 const tabsWrap = document.querySelector('.j-catalog__tabs');
-const tabsArray = Array.from(tabsWrap.children);
+const tabsArray = Array.prototype.slice.call(tabsWrap.children);
 
 tabsArray.forEach(function(tab) {
   const link = tab.firstElementChild;

@@ -27,6 +27,10 @@ const cssnano = require('gulp-cssnano');
 const postcssInlineSvg = require('postcss-inline-svg');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('gulp-pngquant');
+const csso = require('gulp-csso');
+const concat = require('gulp-concat');
+const htmlmin = require('gulp-htmlmin');
+const webp = require('gulp-webp');
 
 function styles() {
   return src(`${dir.src}/scss/style.scss`)
@@ -36,7 +40,7 @@ function styles() {
     .pipe(postcss([
       autoprefixer({browsers: ['last 2 version'], grid: true}),
     ]))
-    .pipe(cssnano())
+    .pipe(csso())
     .pipe(sourcemaps.write('/'))
     .pipe(rename('style.min.css'))
     .pipe(dest(`${dir.build}/css`))
@@ -47,6 +51,7 @@ exports.styles = styles;
 function copyHTML() {
   return src(`${dir.src}/*.html`)
     .pipe(plumber())
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest(dir.build));
 }
 exports.copyHTML = copyHTML;
@@ -56,8 +61,7 @@ function copyImg() {
     .pipe(plumber())
     // .pipe(imagemin({
     //         interlaced: true,
-    //         progressive: true,
-    //         use: [pngquant()]
+    //         progressive: true
     //     }))
     .pipe(dest(`${dir.build}/img`));
 }
@@ -100,10 +104,24 @@ function copyVendorsJs() {
       './node_modules/owl.carousel/dist/owl.carousel.min.js',
       './node_modules/jquery/dist/jquery.min.js',
       './node_modules/svg4everybody/dist/svg4everybody.min.js',
+      './node_modules/jquery-validation/dist/jquery.validate.min.js',
     ])
+    .pipe(uglify())
     .pipe(dest(`${dir.build}/js`));
 }
 exports.copyVendorsJs = copyVendorsJs;
+
+function concatVendorsJs() {
+  return src([
+      './node_modules/owl.carousel/dist/owl.carousel.min.js',
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/jquery-validation/dist/jquery.validate.min.js',
+    ])
+    .pipe(concat('vendors.js'))
+    .pipe(uglify())
+    .pipe(dest(`${dir.build}/js`));
+}
+exports.concatVendorsJs = concatVendorsJs;
 
 function javascript() {
   return src(`${dir.src}/js/script.js`)
@@ -129,7 +147,7 @@ function javascript() {
         //   jquery: 'jQuery'
         // }
       }))
-      .pipe(dest(`${dir.build}/js`))
+      // .pipe(dest(`${dir.build}/js`))
       .pipe(uglify())
       .pipe(rename({ suffix: '.min' }))
       .pipe(dest(`${dir.build}/js`));

@@ -1,6 +1,6 @@
-form.form(action='#')
+form(id='form' method='POST' action='#').form
 	label(for="user-mail").form__label
-		input(id="user-mail" type="text" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required).form__mail.form__input
+		input(id="user-mail" type="email" name="user-mail" placeholder="Ваша почта" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required).form__mail.form__input
 		span.form__mail-error
 	label(for="user-message").form__label
 		input(id="user-message" type="text" name="user-message" placeholder="Сообщение" required).form__message.form__input
@@ -9,4 +9,4 @@ form.form(action='#')
 		span.form__checkbox--custom
 		span Я согласен(-на) с <a href="#">политикой конфиденциальности</a><br> и <a href="#">правилами обработки данных</a>
 		span.form__checkbox-error
-	button(type="submit").form__btn Отправить
+	button.form__btn Отправить

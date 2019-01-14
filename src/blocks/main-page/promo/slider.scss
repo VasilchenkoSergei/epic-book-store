@@ -125,6 +125,28 @@
     width: 40px;
     height: 40px;
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      bottom: 0;
+      left: -1px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $bottom-color;
+      transition: all 0.5s;
+    }
+
+    &:hover:before {
+      background-color: $icon-hover;
+    }
+
+    &:hover use {
+      fill: $bottom-color;
+    }
+
     &:focus {
       border: 2px solid #e8e8e8;
     }
@@ -147,6 +169,28 @@
     width: 40px;
     height: 40px;
 
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $bottom-color;
+      transition: all 0.5s;
+    }
+
+    &:hover:before {
+      background-color: $icon-hover;
+    }
+
+    &:hover use {
+      fill: $bottom-color;
+    }
+
     @media (min-width: $screen-md) {
       top: -170px;
       left: -80px;
@@ -154,7 +198,18 @@
 
     @media (min-width: $screen-lg) {
       top: -230px;
-      left: -80px;
+      left: -20px;
     }
   }
+}
+
+.slider-left,
+.slider-right {
+  fill: $icon-hover;
+  transition: fill 0.5s;
+  position: relative;
+}
+
+.slider-right {
+  transform: rotate(180deg);
 }
