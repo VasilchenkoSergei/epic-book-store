@@ -65,6 +65,15 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    margin-right: -30px;
+
+    @media (min-width: $screen-md) {
+      margin-right: -40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 0;
+    }
 
     & .product-card-mini {
       width: 260px;
